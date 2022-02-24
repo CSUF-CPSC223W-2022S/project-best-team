@@ -16,6 +16,7 @@
 		7AB3096627C76B81002AF134 /* bestTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3096527C76B81002AF134 /* bestTeamTests.swift */; };
 		7AB3097027C76B81002AF134 /* bestTeamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3096F27C76B81002AF134 /* bestTeamUITests.swift */; };
 		7AB3097227C76B81002AF134 /* bestTeamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */; };
+		7AB3098127C76C06002AF134 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AB3098027C76C06002AF134 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7AB3096B27C76B81002AF134 /* bestTeamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bestTeamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB3096F27C76B81002AF134 /* bestTeamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestTeamUITests.swift; sourceTree = "<group>"; };
 		7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestTeamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7AB3098027C76C06002AF134 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		7AB3094227C76B79002AF134 = {
 			isa = PBXGroup;
 			children = (
+				7AB3098027C76C06002AF134 /* .gitignore */,
 				7AB3094D27C76B79002AF134 /* bestTeam */,
 				7AB3096427C76B81002AF134 /* bestTeamTests */,
 				7AB3096E27C76B81002AF134 /* bestTeamUITests */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB3098127C76C06002AF134 /* .gitignore in Resources */,
 				7AB3095B27C76B81002AF134 /* LaunchScreen.storyboard in Resources */,
 				7AB3095827C76B81002AF134 /* Assets.xcassets in Resources */,
 				7AB3095627C76B79002AF134 /* Main.storyboard in Resources */,
