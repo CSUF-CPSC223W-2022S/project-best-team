@@ -17,6 +17,7 @@
 		7AB3097027C76B81002AF134 /* bestTeamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3096F27C76B81002AF134 /* bestTeamUITests.swift */; };
 		7AB3097227C76B81002AF134 /* bestTeamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */; };
 		7AB3098127C76C06002AF134 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AB3098027C76C06002AF134 /* .gitignore */; };
+		7AEB55A627CF5BBC005C63EC /* tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB55A527CF5BBC005C63EC /* tracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7AB3096F27C76B81002AF134 /* bestTeamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestTeamUITests.swift; sourceTree = "<group>"; };
 		7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestTeamUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7AB3098027C76C06002AF134 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		7AEB55A527CF5BBC005C63EC /* tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tracker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7AB3095727C76B81002AF134 /* Assets.xcassets */,
 				7AB3095927C76B81002AF134 /* LaunchScreen.storyboard */,
 				7AB3095C27C76B81002AF134 /* Info.plist */,
+				7AEB55A527CF5BBC005C63EC /* tracker.swift */,
 			);
 			path = bestTeam;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AEB55A627CF5BBC005C63EC /* tracker.swift in Sources */,
 				7AB3095327C76B79002AF134 /* ViewController.swift in Sources */,
 				7AB3094F27C76B79002AF134 /* AppDelegate.swift in Sources */,
 				7AB3095127C76B79002AF134 /* SceneDelegate.swift in Sources */,
