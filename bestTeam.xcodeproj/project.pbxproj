@@ -13,11 +13,12 @@
 		7AB3095627C76B79002AF134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB3095427C76B79002AF134 /* Main.storyboard */; };
 		7AB3095827C76B81002AF134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB3095727C76B81002AF134 /* Assets.xcassets */; };
 		7AB3095B27C76B81002AF134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB3095927C76B81002AF134 /* LaunchScreen.storyboard */; };
-		7AB3096627C76B81002AF134 /* bestTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3096527C76B81002AF134 /* bestTeamTests.swift */; };
 		7AB3097027C76B81002AF134 /* bestTeamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3096F27C76B81002AF134 /* bestTeamUITests.swift */; };
 		7AB3097227C76B81002AF134 /* bestTeamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */; };
 		7AB3098127C76C06002AF134 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AB3098027C76C06002AF134 /* .gitignore */; };
-		7AEB55A627CF5BBC005C63EC /* tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB55A527CF5BBC005C63EC /* tracker.swift */; };
+		7AEB55A627CF5BBC005C63EC /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB55A527CF5BBC005C63EC /* Tracker.swift */; };
+		7AEB55AA27DA6D7B005C63EC /* bestTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3096527C76B81002AF134 /* bestTeamTests.swift */; };
+		7AEB55AE27DA6E80005C63EC /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB55AD27DA6E80005C63EC /* TrackerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,8 @@
 		7AB3096F27C76B81002AF134 /* bestTeamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestTeamUITests.swift; sourceTree = "<group>"; };
 		7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestTeamUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7AB3098027C76C06002AF134 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		7AEB55A527CF5BBC005C63EC /* tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tracker.swift; sourceTree = "<group>"; };
+		7AEB55A527CF5BBC005C63EC /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		7AEB55AD27DA6E80005C63EC /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +88,6 @@
 				7AB3098027C76C06002AF134 /* .gitignore */,
 				7AB3094D27C76B79002AF134 /* bestTeam */,
 				7AB3096427C76B81002AF134 /* bestTeamTests */,
-				7AB3096E27C76B81002AF134 /* bestTeamUITests */,
 				7AB3094C27C76B79002AF134 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,7 +112,7 @@
 				7AB3095727C76B81002AF134 /* Assets.xcassets */,
 				7AB3095927C76B81002AF134 /* LaunchScreen.storyboard */,
 				7AB3095C27C76B81002AF134 /* Info.plist */,
-				7AEB55A527CF5BBC005C63EC /* tracker.swift */,
+				7AEB55A927DA6920005C63EC /* TrackerFiles */,
 			);
 			path = bestTeam;
 			sourceTree = "<group>";
@@ -119,7 +120,7 @@
 		7AB3096427C76B81002AF134 /* bestTeamTests */ = {
 			isa = PBXGroup;
 			children = (
-				7AB3096527C76B81002AF134 /* bestTeamTests.swift */,
+				7AB3096E27C76B81002AF134 /* bestTeamUITests */,
 			);
 			path = bestTeamTests;
 			sourceTree = "<group>";
@@ -127,10 +128,20 @@
 		7AB3096E27C76B81002AF134 /* bestTeamUITests */ = {
 			isa = PBXGroup;
 			children = (
+				7AB3096527C76B81002AF134 /* bestTeamTests.swift */,
 				7AB3096F27C76B81002AF134 /* bestTeamUITests.swift */,
 				7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */,
 			);
 			path = bestTeamUITests;
+			sourceTree = "<group>";
+		};
+		7AEB55A927DA6920005C63EC /* TrackerFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7AEB55A527CF5BBC005C63EC /* Tracker.swift */,
+				7AEB55AD27DA6E80005C63EC /* TrackerTests.swift */,
+			);
+			path = TrackerFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 					};
 					7AB3096027C76B81002AF134 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 7AB3094A27C76B79002AF134;
 					};
 					7AB3096A27C76B81002AF134 = {
@@ -265,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AEB55A627CF5BBC005C63EC /* tracker.swift in Sources */,
+				7AEB55A627CF5BBC005C63EC /* Tracker.swift in Sources */,
 				7AB3095327C76B79002AF134 /* ViewController.swift in Sources */,
 				7AB3094F27C76B79002AF134 /* AppDelegate.swift in Sources */,
 				7AB3095127C76B79002AF134 /* SceneDelegate.swift in Sources */,
@@ -276,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB3096627C76B81002AF134 /* bestTeamTests.swift in Sources */,
+				7AEB55AE27DA6E80005C63EC /* TrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB3097227C76B81002AF134 /* bestTeamUITestsLaunchTests.swift in Sources */,
+				7AEB55AA27DA6D7B005C63EC /* bestTeamTests.swift in Sources */,
 				7AB3097027C76B81002AF134 /* bestTeamUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +460,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FSQ82ND8J9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = bestTeam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -474,6 +488,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FSQ82ND8J9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = bestTeam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -499,14 +514,23 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fullerton.ecs.bestTeamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "bestTeam/TrackerFiles/bestTeamTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bestTeam.app/bestTeam";
@@ -518,14 +542,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fullerton.ecs.bestTeamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "bestTeam/TrackerFiles/bestTeamTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bestTeam.app/bestTeam";
@@ -538,6 +570,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fullerton.ecs.bestTeamUITests;
@@ -555,6 +588,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.fullerton.ecs.bestTeamUITests;
