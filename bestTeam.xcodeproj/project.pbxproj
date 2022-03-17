@@ -16,6 +16,7 @@
 		7AC2103527E38B84008549BA /* bestTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2103427E38B84008549BA /* bestTeamTests.swift */; };
 		7AC2104E27E38C2E008549BA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AC2104D27E38C2E008549BA /* .gitignore */; };
 		7AC2105027E38DF6008549BA /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2104F27E38DF6008549BA /* BMI.swift */; };
+		7AC2105227E3994E008549BA /* BMITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2105127E3994E008549BA /* BMITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		7AC2103427E38B84008549BA /* bestTeamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestTeamTests.swift; sourceTree = "<group>"; };
 		7AC2104D27E38C2E008549BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7AC2104F27E38DF6008549BA /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		7AC2105127E3994E008549BA /* BMITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				7AC2103427E38B84008549BA /* bestTeamTests.swift */,
+				7AC2105127E3994E008549BA /* BMITests.swift */,
 			);
 			path = bestTeamTests;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC2105227E3994E008549BA /* BMITests.swift in Sources */,
 				7AC2103527E38B84008549BA /* bestTeamTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
