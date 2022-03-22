@@ -15,6 +15,7 @@
 		7AC2102A27E38B84008549BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AC2102827E38B84008549BA /* LaunchScreen.storyboard */; };
 		7AC2103527E38B84008549BA /* bestTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2103427E38B84008549BA /* bestTeamTests.swift */; };
 		7AC2104E27E38C2E008549BA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AC2104D27E38C2E008549BA /* .gitignore */; };
+		A53329B527EA1D190005657E /* randomFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53329B427EA1D190005657E /* randomFact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		7AC2103027E38B84008549BA /* bestTeamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bestTeamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC2103427E38B84008549BA /* bestTeamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestTeamTests.swift; sourceTree = "<group>"; };
 		7AC2104D27E38C2E008549BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A53329B427EA1D190005657E /* randomFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomFact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				7AC2102627E38B84008549BA /* Assets.xcassets */,
 				7AC2102827E38B84008549BA /* LaunchScreen.storyboard */,
 				7AC2102B27E38B84008549BA /* Info.plist */,
+				A53329B427EA1D190005657E /* randomFact.swift */,
 			);
 			path = bestTeam;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			files = (
 				7AC2102227E38B82008549BA /* ViewController.swift in Sources */,
 				7AC2101E27E38B82008549BA /* AppDelegate.swift in Sources */,
+				A53329B527EA1D190005657E /* randomFact.swift in Sources */,
 				7AC2102027E38B82008549BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,6 +379,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,6 +408,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
