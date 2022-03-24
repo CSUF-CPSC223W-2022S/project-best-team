@@ -7,11 +7,13 @@
 
 import Foundation
 
-class BMI {
-    var index: Double
-    // height and weight in standard system
-    var height: Double?
-    var weight: Double?
+struct BMI {
+    var index: Double {
+        return (703 * weight) / (height * height)
+    }
+    // height and weight in imperial
+    var height: Double
+    var weight: Double
     var category: String {
         switch index {
         case 0..<18.5:
@@ -25,26 +27,10 @@ class BMI {
         }
         
     }
-
-    init(index: Double) {
-        self.index = index
-    }
-
-    init(height: Double, weight: Double) {
-        self.height = height
-        self.weight = weight
-    }
-    // have to convert height and weight to metric
-    // weight (kg) / height^2 (m^2)
-    func calculateBMI () {
-        
+    
+    init(heightInput: Double, weightInput: Double) {
+        self.height = heightInput
+        self.weight = weightInput
     }
 
 }
-
-//class noBMI: BMI {
-//    init(height: Double, weight: Double) {
-//        height
-//            super.init(index:)
-//    }
-//}
