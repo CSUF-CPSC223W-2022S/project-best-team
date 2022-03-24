@@ -2,7 +2,7 @@
 //  bestTeamTests.swift
 //  bestTeamTests
 //
-//  Created by csuftitan on 3/17/22.
+//  Created by Edison Chung on 3/17/22.
 //
 
 import XCTest
