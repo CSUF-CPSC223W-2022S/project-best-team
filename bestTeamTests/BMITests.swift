@@ -33,28 +33,42 @@ class BMITests: XCTestCase {
         }
     }
     
-    func testInitializer() {
-        let index = BMI(index: 140)
-        XCTAssertEqual(index.index, 140)
+    func testInitializerIndex() {
+        let index = BMI(feet: 5, inches: 10, pounds: 145)
+        XCTAssertEqual(index.index, 20.8)
     }
     
+    func testIntializerHeight() {
+        let index = BMI(feet: 5, inches: 10, pounds: 145)
+        XCTAssertEqual(index.height, 70)
+    }
+    
+    func testInitializerWeight() {
+        let index = BMI(feet: 5, inches: 10, pounds: 145.2)
+        XCTAssertEqual(index.weight, 145.2)
+    }
+
     func testUnderweight() {
-        let index = BMI(index: 18)
+        let index = BMI(feet: 5, inches: 10, pounds: 100)
+        XCTAssertEqual(index.index, 14.3)
         XCTAssertEqual(index.category, "Underweight")
     }
     
-    func testNormla() {
-        let index = BMI(index: 19)
+    func testNormal() {
+        let index = BMI(feet: 5, inches: 10, pounds: 145)
+        XCTAssertEqual(index.index, 20.8)
         XCTAssertEqual(index.category, "Normal")
     }
     
     func testOverweight() {
-        let index = BMI(index: 29.9)
+        let index = BMI(feet: 5, inches: 10, pounds: 200)
+        XCTAssertEqual(index.index, 28.7)
         XCTAssertEqual(index.category, "Overweight")
     }
     
     func testObese() {
-        let index = BMI(index: 1000)
+        let index = BMI(feet: 5, inches: 10, pounds: 250)
+        XCTAssertEqual(index.index, 35.9)
         XCTAssertEqual(index.category, "Obese")
     }
 

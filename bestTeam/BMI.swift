@@ -7,12 +7,10 @@
 
 import Foundation
 
-struct BMI {
-    var index: Double {
-        return (703 * weight) / (height * height)
-    }
-    // height and weight in imperial
-    var height: Double
+class BMI {
+    var index: Double
+    // height and weight in standard imperial units
+    var height: Int
     var weight: Double
     var category: String {
         switch index {
@@ -28,9 +26,9 @@ struct BMI {
         
     }
     
-    init(heightInput: Double, weightInput: Double) {
-        self.height = heightInput
-        self.weight = weightInput
+    init(feet: Int, inches: Int, pounds: Double) {
+        self.height = (feet * 12) + inches
+        self.weight = pounds
+        self.index = round(((703 * weight) / Double((height * height))) * 10) / 10.0
     }
-
 }
