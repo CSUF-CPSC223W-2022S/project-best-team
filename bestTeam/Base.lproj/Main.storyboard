@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="95m-UM-6xu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,25 +8,288 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sunday-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jre-pt-jKN">
+                                <rect key="frame" x="105" y="79" width="108" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Sunday">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96841138599999999" green="0.94076862029999997" blue="0.4736222518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Jre-pt-jKN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="EdK-cW-jWl"/>
+                            <constraint firstItem="Jre-pt-jKN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="t8X-SR-0JY"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Sunday" id="f0f-g7-l7Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="83"/>
+            <point key="canvasLocation" x="413.04347826086962" y="50.892857142857139"/>
+        </scene>
+        <!--Monday-->
+        <scene sceneID="EGQ-XO-neI">
+            <objects>
+                <viewController id="uBS-U2-HlN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EoL-CM-wzc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKZ-Uc-fWm">
+                                <rect key="frame" x="105" y="79" width="120" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Monday">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MN8-H9-KwF"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="qKZ-Uc-fWm" firstAttribute="leading" secondItem="MN8-H9-KwF" secondAttribute="leading" constant="105" id="HHp-4d-MyF"/>
+                            <constraint firstItem="qKZ-Uc-fWm" firstAttribute="top" secondItem="MN8-H9-KwF" secondAttribute="top" constant="35" id="hxz-YX-Yri"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Monday" id="DB8-nF-iZ1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7RK-Z6-VXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121.7391304347827" y="50.892857142857139"/>
+        </scene>
+        <!--Tuesday-->
+        <scene sceneID="J4O-xB-IN5">
+            <objects>
+                <viewController id="Gpc-eT-Fzb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hsx-BW-vI4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srs-ff-Ozp">
+                                <rect key="frame" x="105" y="79" width="121" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tuesday">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ng4-Mx-apS"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="Srs-ff-Ozp" firstAttribute="leading" secondItem="ng4-Mx-apS" secondAttribute="leading" constant="105" id="Geh-np-3D6"/>
+                            <constraint firstItem="Srs-ff-Ozp" firstAttribute="top" secondItem="ng4-Mx-apS" secondAttribute="top" constant="35" id="I0o-gW-wnm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tuesday" id="N8f-Pj-9i4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pr-af-nDy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826.0869565217392" y="50.892857142857139"/>
+        </scene>
+        <!--Wednesday-->
+        <scene sceneID="b4R-yh-Esd">
+            <objects>
+                <viewController id="Lee-fw-AxO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y2U-65-Tw5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMs-8D-GWF">
+                                <rect key="frame" x="105" y="79" width="166" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Wednesday">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4I3-LR-LdP"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="hMs-8D-GWF" firstAttribute="leading" secondItem="4I3-LR-LdP" secondAttribute="leading" constant="105" id="coc-tw-JU4"/>
+                            <constraint firstItem="hMs-8D-GWF" firstAttribute="top" secondItem="4I3-LR-LdP" secondAttribute="top" constant="35" id="ofV-7R-01q"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wednesday" id="bCP-oH-i2u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APD-a8-aVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515.9420289855075" y="50.892857142857139"/>
+        </scene>
+        <!--Thursday-->
+        <scene sceneID="Kyw-rc-BAg">
+            <objects>
+                <viewController id="Vl4-1w-usk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hGn-jo-dKi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw4-mK-au3">
+                                <rect key="frame" x="105" y="79" width="136" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Thursday">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nku-4R-PgN"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="zw4-mK-au3" firstAttribute="leading" secondItem="nku-4R-PgN" secondAttribute="leading" constant="105" id="2nD-jn-fyD"/>
+                            <constraint firstItem="zw4-mK-au3" firstAttribute="top" secondItem="nku-4R-PgN" secondAttribute="top" constant="35" id="tg5-6y-PmG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Thursday" id="v1P-Mp-Fds"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VyZ-iH-uN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3228.985507246377" y="50.892857142857139"/>
+        </scene>
+        <!--Friday-->
+        <scene sceneID="3Wc-6R-gZA">
+            <objects>
+                <viewController id="mIm-5Q-m84" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5cs-0C-OC4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fN-w5-pJV">
+                                <rect key="frame" x="105" y="79" width="94" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Friday">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bHo-q7-yJp"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="4fN-w5-pJV" firstAttribute="leading" secondItem="bHo-q7-yJp" secondAttribute="leading" constant="105" id="JLf-Wh-U8Q"/>
+                            <constraint firstItem="4fN-w5-pJV" firstAttribute="top" secondItem="bHo-q7-yJp" secondAttribute="top" constant="35" id="yFV-jy-cxA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Friday" id="RSm-oX-DZY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bn8-AY-vlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3926.0869565217395" y="50.892857142857139"/>
+        </scene>
+        <!--Saturday-->
+        <scene sceneID="i3U-br-79m">
+            <objects>
+                <viewController id="tEY-eD-cOk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VGt-91-7uj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8w-Ch-R2O">
+                                <rect key="frame" x="105" y="79" width="128" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Saturday">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jcl-eT-Hhd"/>
+                        <color key="backgroundColor" red="0.91976243260000001" green="0.54957085959999996" blue="0.85408199060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="c8w-Ch-R2O" firstAttribute="leading" secondItem="Jcl-eT-Hhd" secondAttribute="leading" constant="105" id="Ble-U9-1tX"/>
+                            <constraint firstItem="c8w-Ch-R2O" firstAttribute="top" secondItem="Jcl-eT-Hhd" secondAttribute="top" constant="35" id="kFB-3r-emk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Saturday" id="hKd-81-GwK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSP-pq-uWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4618.840579710145" y="50.892857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="13W-oX-dJz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="95m-UM-6xu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fvN-mW-41p">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="LsV-wN-Bg7"/>
+                        <segue destination="uBS-U2-HlN" kind="relationship" relationship="viewControllers" id="L79-PL-MSw"/>
+                        <segue destination="Gpc-eT-Fzb" kind="relationship" relationship="viewControllers" id="O0E-c0-NVY"/>
+                        <segue destination="Lee-fw-AxO" kind="relationship" relationship="viewControllers" id="Qyh-RM-QIL"/>
+                        <segue destination="Vl4-1w-usk" kind="relationship" relationship="viewControllers" id="3Eh-zY-YMA"/>
+                        <segue destination="mIm-5Q-m84" kind="relationship" relationship="viewControllers" id="tSG-W3-y5q"/>
+                        <segue destination="tEY-eD-cOk" kind="relationship" relationship="viewControllers" id="DOH-XS-FyP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6V-c2-Qhe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-497.10144927536237" y="50.892857142857139"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
