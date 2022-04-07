@@ -18,6 +18,8 @@
 		7AB3097227C76B81002AF134 /* bestTeamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */; };
 		7AB3098127C76C06002AF134 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AB3098027C76C06002AF134 /* .gitignore */; };
 		7AEB55A627CF5BBC005C63EC /* tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEB55A527CF5BBC005C63EC /* tracker.swift */; };
+		B492585827DA687700EF228A /* workoutGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492585727DA687700EF228A /* workoutGoal.swift */; };
+		B492585D27DA6E8300EF228A /* workoutGoal_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492585C27DA6E8300EF228A /* workoutGoal_test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bestTeamUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7AB3098027C76C06002AF134 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7AEB55A527CF5BBC005C63EC /* tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tracker.swift; sourceTree = "<group>"; };
+		B492585727DA687700EF228A /* workoutGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workoutGoal.swift; sourceTree = "<group>"; };
+		B492585C27DA6E8300EF228A /* workoutGoal_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workoutGoal_test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				7AB3095927C76B81002AF134 /* LaunchScreen.storyboard */,
 				7AB3095C27C76B81002AF134 /* Info.plist */,
 				7AEB55A527CF5BBC005C63EC /* tracker.swift */,
+				B492585927DA695E00EF228A /* workoutGoal_files */,
 			);
 			path = bestTeam;
 			sourceTree = "<group>";
@@ -131,6 +136,15 @@
 				7AB3097127C76B81002AF134 /* bestTeamUITestsLaunchTests.swift */,
 			);
 			path = bestTeamUITests;
+			sourceTree = "<group>";
+		};
+		B492585927DA695E00EF228A /* workoutGoal_files */ = {
+			isa = PBXGroup;
+			children = (
+				B492585727DA687700EF228A /* workoutGoal.swift */,
+				B492585C27DA6E8300EF228A /* workoutGoal_test.swift */,
+			);
+			path = workoutGoal_files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +281,7 @@
 			files = (
 				7AEB55A627CF5BBC005C63EC /* tracker.swift in Sources */,
 				7AB3095327C76B79002AF134 /* ViewController.swift in Sources */,
+				B492585827DA687700EF228A /* workoutGoal.swift in Sources */,
 				7AB3094F27C76B79002AF134 /* AppDelegate.swift in Sources */,
 				7AB3095127C76B79002AF134 /* SceneDelegate.swift in Sources */,
 			);
@@ -276,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B492585D27DA6E8300EF228A /* workoutGoal_test.swift in Sources */,
 				7AB3096627C76B81002AF134 /* bestTeamTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
