@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A4C6AEF27F4CF4400207C42 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C6AEE27F4CF4400207C42 /* Tracker.swift */; };
+		7A4C6AF127F4CFA100207C42 /* TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C6AF027F4CFA100207C42 /* TrackerTests.swift */; };
 		7AC2101E27E38B82008549BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2101D27E38B82008549BA /* AppDelegate.swift */; };
 		7AC2102027E38B82008549BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2101F27E38B82008549BA /* SceneDelegate.swift */; };
 		7AC2102227E38B82008549BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2102127E38B82008549BA /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A4C6AEE27F4CF4400207C42 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		7A4C6AF027F4CFA100207C42 /* TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerTests.swift; sourceTree = "<group>"; };
 		7AC2101A27E38B82008549BA /* bestTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bestTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AC2101D27E38B82008549BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AC2101F27E38B82008549BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A4C6AED27F4CF3300207C42 /* TrackerFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7A4C6AEE27F4CF4400207C42 /* Tracker.swift */,
+			);
+			path = TrackerFiles;
+			sourceTree = "<group>";
+		};
 		7AC2101127E38B81008549BA = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +105,7 @@
 				7AC2102827E38B84008549BA /* LaunchScreen.storyboard */,
 				7AC2102B27E38B84008549BA /* Info.plist */,
 				7AC2104F27E38DF6008549BA /* BMI.swift */,
+				7A4C6AED27F4CF3300207C42 /* TrackerFiles */,
 			);
 			path = bestTeam;
 			sourceTree = "<group>";
@@ -102,6 +115,7 @@
 			children = (
 				7AC2103427E38B84008549BA /* bestTeamTests.swift */,
 				7AC2105127E3994E008549BA /* BMITests.swift */,
+				7A4C6AF027F4CFA100207C42 /* TrackerTests.swift */,
 			);
 			path = bestTeamTests;
 			sourceTree = "<group>";
@@ -210,6 +224,7 @@
 			files = (
 				7AC2105027E38DF6008549BA /* BMI.swift in Sources */,
 				7AC2102227E38B82008549BA /* ViewController.swift in Sources */,
+				7A4C6AEF27F4CF4400207C42 /* Tracker.swift in Sources */,
 				7AC2101E27E38B82008549BA /* AppDelegate.swift in Sources */,
 				7AC2102027E38B82008549BA /* SceneDelegate.swift in Sources */,
 			);
@@ -219,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A4C6AF127F4CFA100207C42 /* TrackerTests.swift in Sources */,
 				7AC2105227E3994E008549BA /* BMITests.swift in Sources */,
 				7AC2103527E38B84008549BA /* bestTeamTests.swift in Sources */,
 			);
