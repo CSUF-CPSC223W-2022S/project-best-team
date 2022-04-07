@@ -45,64 +45,33 @@ class Tracker {
         } else {
             index = 0
             weekCount += 1
+            weekTracker()
             dayOfWeek = weekday[1] ?? ""
         }
         return dayOfWeek
     }
     
     func workoutForDay() ->Void { //change return type
-        //monday: chests; tuesday: legs; wednesday: cardio; thursday: back; friday: abs; saturday: arms; sunday: rest day
+        //options: chests, legs, cardio, back, abs, arms, rest day
         if(currentDay == 0) {
-            //return rest day or suggested workout
+            //return workout day 1
         } else if (currentDay == 1) {
-            //return chests
+            //return workout day 2
         } else if (currentDay == 2) {
-            //return legs
+            //return workout day 3
         } else if (currentDay == 3) {
-            //return cardio
+            //return workout day 4
         } else if (currentDay == 4) {
-            //return back
+            //return workout day 5
         } else if (currentDay == 5) {
-            //return abs
+            //return workout day 5
         } else if (currentDay == 6) {
-            //return arms
+            //return workout day 6
         } else {
-            //return rest day or suggested workout
+            //return workout day 7 / rest day / suggested workout
         }
     }
-    
-    func clickThrough() ->Void { //change return to Int
-//        var index: Int = 0
-//        if(click next) {
-//            index += 1
-//        } else if (click back){
-//            index -= 1
-//        }
-//        return index
-    }
-    
-    func workoutSchedule() ->Void {
-//        for(_,_) in workouts {
-//            if(workouts[clickThrough()] == "Sunday") {
-//                //return rest day or suggested workout
-//            } else if(workouts[clickThrough()] == "Monday") {
-//                //return chests workout
-//            } else if(workouts[clickThrough() == "Tuesday"]) {
-//                //return legs
-//            } else if(workouts[clickThrough()] == "Wednesday") {
-//                //return cardio
-//            } else if(workouts[clickThrough() == "Thursday"]) {
-//                //return back
-//            } else if(workouts[clickThrough() == "Friday"]) {
-//                //return abs
-//            } else if(workouts[clickThrough() == "Saturday"]) {
-//                //return arms
-//            } else {
-//                //return rest day or suggested workout
-//            }
-//        }
-    }
-    
+        
     func weekTracker() ->Void {
         print("Congratulations! You made it through week \(weekCount)!")
         let randomPhrase = Int.random(in: 1...5)
@@ -124,6 +93,7 @@ class Tracker {
 }
 
 //=======================================================================================
+
 //First Draft:
 //class Tracker {
 //    var weekDay: String
@@ -209,5 +179,41 @@ class Tracker {
 //        return currentDay
 //    }
 //}
+
+//=======================================================================================
+
+//clickThrough psuedocode idea:
+//    func clickThrough() ->Void { //change return to Int
+//        var index: Int = 0
+//        if(click next) {
+//            index += 1
+//        } else if (click back){
+//            index -= 1
+//        }
+//        return index
+//    }
+    
+ //   func workoutSchedule() ->Void {
+//        for(_,_) in workouts {
+//            if(workouts[clickThrough()] == "Sunday") {
+//                //return rest day or suggested workout
+//            } else if(workouts[clickThrough()] == "Monday") {
+//                //return chests workout
+//            } else if(workouts[clickThrough() == "Tuesday"]) {
+//                //return legs
+//            } else if(workouts[clickThrough()] == "Wednesday") {
+//                //return cardio
+//            } else if(workouts[clickThrough() == "Thursday"]) {
+//                //return back
+//            } else if(workouts[clickThrough() == "Friday"]) {
+//                //return abs
+//            } else if(workouts[clickThrough() == "Saturday"]) {
+//                //return arms
+//            } else {
+//                //return rest day or suggested workout
+//            }
+//        }
+//    }
+
 //=======================================================================================
 

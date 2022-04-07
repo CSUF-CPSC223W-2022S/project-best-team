@@ -58,4 +58,5 @@ class TrackerTests: XCTestCase {
         trackerValue.currentDay = 6
         XCTAssertEqual(trackerValue.weekday[trackerValue.currentDay], "Saturday")
     }
+    
 }
