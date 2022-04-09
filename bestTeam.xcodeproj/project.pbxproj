@@ -19,6 +19,8 @@
 		7AC2104E27E38C2E008549BA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7AC2104D27E38C2E008549BA /* .gitignore */; };
 		7AC2105027E38DF6008549BA /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2104F27E38DF6008549BA /* BMI.swift */; };
 		7AC2105227E3994E008549BA /* BMITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2105127E3994E008549BA /* BMITests.swift */; };
+		A5EA434A280234B6003AD0A4 /* factTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EA4349280234B6003AD0A4 /* factTests.swift */; };
+		A5EA434C2802350E003AD0A4 /* randomFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EA434B2802350E003AD0A4 /* randomFacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		7AC2104D27E38C2E008549BA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		7AC2104F27E38DF6008549BA /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		7AC2105127E3994E008549BA /* BMITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMITests.swift; sourceTree = "<group>"; };
+		A5EA4349280234B6003AD0A4 /* factTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = factTests.swift; sourceTree = "<group>"; };
+		A5EA434B2802350E003AD0A4 /* randomFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomFacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 				7AC2102B27E38B84008549BA /* Info.plist */,
 				7AC2104F27E38DF6008549BA /* BMI.swift */,
 				7A4C6AED27F4CF3300207C42 /* TrackerFiles */,
+				A5EA434B2802350E003AD0A4 /* randomFacts.swift */,
 			);
 			path = bestTeam;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				7AC2103427E38B84008549BA /* bestTeamTests.swift */,
 				7AC2105127E3994E008549BA /* BMITests.swift */,
 				7A4C6AF027F4CFA100207C42 /* TrackerTests.swift */,
+				A5EA4349280234B6003AD0A4 /* factTests.swift */,
 			);
 			path = bestTeamTests;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 				7AC2102227E38B82008549BA /* ViewController.swift in Sources */,
 				7A4C6AEF27F4CF4400207C42 /* Tracker.swift in Sources */,
 				7AC2101E27E38B82008549BA /* AppDelegate.swift in Sources */,
+				A5EA434C2802350E003AD0A4 /* randomFacts.swift in Sources */,
 				7AC2102027E38B82008549BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +244,7 @@
 				7A4C6AF127F4CFA100207C42 /* TrackerTests.swift in Sources */,
 				7AC2105227E3994E008549BA /* BMITests.swift in Sources */,
 				7AC2103527E38B84008549BA /* bestTeamTests.swift in Sources */,
+				A5EA434A280234B6003AD0A4 /* factTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,6 +436,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,7 +459,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SFBGDA98Q2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chungEdison.bestTeamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -469,7 +479,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SFBGDA98Q2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = chungEdison.bestTeamTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
