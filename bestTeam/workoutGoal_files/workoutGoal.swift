@@ -30,9 +30,9 @@ class workoutGoal {
     var Muscle6 = "Legs"
     // Types of focused muscles
     var shoulder : [String] = ["Trapezius"]
-    var arms : [String] = ["Biceps", "Triceps", "Forearms", "Latissimus Dorsi"]
+    var arms : [String] = ["Biceps", "Triceps", "Forearms"]
     var chest : [String] = ["Chest"]
-    var back : [String] = ["Glutes"]
+    var back : [String] = ["Glutes", "Latissimus Dorsi"]
     var abdominals : [String] = ["Abdominals"]
     var legs : [String] = ["Calves", "Legs", "Hamstrings", "Quadriceps"]
     
