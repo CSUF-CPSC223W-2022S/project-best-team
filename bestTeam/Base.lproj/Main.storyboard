@@ -11,7 +11,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="I2c-iW-Mo2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DvA-oP-nL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="XYN-3f-I1e" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CAp-3C-hjl">
@@ -20,19 +19,20 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="c7v-NF-8ft"/>
                         <segue destination="uBS-U2-HlN" kind="relationship" relationship="viewControllers" id="j2Z-CJ-ct1"/>
                         <segue destination="Gpc-eT-Fzb" kind="relationship" relationship="viewControllers" id="873-DL-t3d"/>
                         <segue destination="Lee-fw-AxO" kind="relationship" relationship="viewControllers" id="Txf-UP-Xcd"/>
                         <segue destination="Vl4-1w-usk" kind="relationship" relationship="viewControllers" id="kEG-be-e8h"/>
                         <segue destination="mIm-5Q-m84" kind="relationship" relationship="viewControllers" id="Zib-DE-9f5"/>
                         <segue destination="tEY-eD-cOk" kind="relationship" relationship="viewControllers" id="HKj-R2-EY2"/>
+                        <segue destination="yUK-Y9-GZM" kind="relationship" relationship="viewControllers" id="j5g-PR-4ag"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DvA-oP-nL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1323.1884057971015" y="50.892857142857139"/>
+            <point key="canvasLocation" x="2113" y="51"/>
         </scene>
-        <!--Sunday-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,10 +76,10 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-7O-Y1y">
-                                <rect key="frame" x="105" y="673" width="204" height="31"/>
+                                <rect key="frame" x="117" y="673" width="180" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Daily Fact"/>
                                 <connections>
                                     <segue destination="gcW-nZ-EV2" kind="show" id="Pkm-4T-jqF"/>
                                 </connections>
@@ -88,12 +88,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96841138599999999" green="0.94076862029999997" blue="0.4736222518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sunday" id="fB1-Ft-QVD"/>
                     <navigationItem key="navigationItem" id="Drb-rs-Cnf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2233.3333333333335" y="50.892857142857139"/>
+            <point key="canvasLocation" x="3143.4782608695655" y="50.892857142857139"/>
         </scene>
         <!--Monday-->
         <scene sceneID="EGQ-XO-neI">
@@ -140,10 +139,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9v-kf-R96">
-                                <rect key="frame" x="105" y="673" width="204" height="31"/>
+                                <rect key="frame" x="117" y="673" width="180" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Daily Fact"/>
                                 <connections>
                                     <segue destination="gcW-nZ-EV2" kind="show" id="SkV-ty-n3R"/>
                                 </connections>
@@ -157,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RK-Z6-VXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2942.0289855072465" y="50.892857142857139"/>
+            <point key="canvasLocation" x="3852.1739130434785" y="50.892857142857139"/>
         </scene>
         <!--Tuesday-->
         <scene sceneID="J4O-xB-IN5">
@@ -204,10 +203,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alv-z4-w0E">
-                                <rect key="frame" x="105" y="673" width="204" height="31"/>
+                                <rect key="frame" x="117" y="673" width="180" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Daily Fact"/>
                                 <connections>
                                     <segue destination="gcW-nZ-EV2" kind="show" id="oFp-k2-BtL"/>
                                 </connections>
@@ -221,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pr-af-nDy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3644.9275362318845" y="50.892857142857139"/>
+            <point key="canvasLocation" x="4555.072463768116" y="50.892857142857139"/>
         </scene>
         <!--Wednesday-->
         <scene sceneID="b4R-yh-Esd">
@@ -268,10 +267,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-0f-1Ai">
-                                <rect key="frame" x="105" y="673" width="204" height="31"/>
+                                <rect key="frame" x="117" y="673" width="180" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Daily Fact"/>
                                 <connections>
                                     <segue destination="gcW-nZ-EV2" kind="show" id="elb-fu-fKJ"/>
                                 </connections>
@@ -285,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APD-a8-aVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4336.231884057971" y="50.892857142857139"/>
+            <point key="canvasLocation" x="5244.9275362318849" y="50.892857142857139"/>
         </scene>
         <!--Thursday-->
         <scene sceneID="Kyw-rc-BAg">
@@ -332,10 +331,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-In-2nO">
-                                <rect key="frame" x="105" y="673" width="204" height="31"/>
+                                <rect key="frame" x="117" y="673" width="180" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Daily Fact"/>
                                 <connections>
                                     <segue destination="gcW-nZ-EV2" kind="show" id="sHr-TD-cpe"/>
                                 </connections>
@@ -349,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyZ-iH-uN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5049.275362318841" y="50.892857142857139"/>
+            <point key="canvasLocation" x="5959.420289855073" y="50.892857142857139"/>
         </scene>
         <!--Friday-->
         <scene sceneID="3Wc-6R-gZA">
@@ -382,10 +381,10 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-3o-m8A">
-                                <rect key="frame" x="105" y="673" width="204" height="31"/>
+                                <rect key="frame" x="117" y="673" width="180" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Daily Fact"/>
                                 <connections>
                                     <segue destination="gcW-nZ-EV2" kind="show" id="DNl-qR-T29"/>
                                 </connections>
@@ -413,7 +412,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bn8-AY-vlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5744.9275362318849" y="50.892857142857139"/>
+            <point key="canvasLocation" x="6655.0724637681169" y="50.892857142857139"/>
         </scene>
         <!--Saturday-->
         <scene sceneID="i3U-br-79m">
@@ -459,10 +458,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AjP-uf-PEU">
-                                <rect key="frame" x="105" y="673" width="204" height="31"/>
+                                <rect key="frame" x="117" y="673" width="180" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here for Daily Fact"/>
                                 <connections>
                                     <segue destination="gcW-nZ-EV2" kind="show" id="vh1-u9-RgE"/>
                                 </connections>
@@ -476,38 +475,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSP-pq-uWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6439.130434782609" y="50.892857142857139"/>
+            <point key="canvasLocation" x="7349.275362318841" y="50.892857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Map-->
+        <scene sceneID="bYv-5K-rQb">
+            <objects>
+                <viewController title="Map" id="yUK-Y9-GZM" customClass="MapViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mnh-ci-jr7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUM-oe-tBz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="map-DA-8qE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="map-DA-8qE" firstAttribute="trailing" secondItem="vUM-oe-tBz" secondAttribute="trailing" id="1eb-RY-4A4"/>
+                            <constraint firstItem="vUM-oe-tBz" firstAttribute="leading" secondItem="map-DA-8qE" secondAttribute="leading" id="2yv-ps-Hku"/>
+                            <constraint firstItem="map-DA-8qE" firstAttribute="bottom" secondItem="vUM-oe-tBz" secondAttribute="bottom" id="QMw-6b-dOn"/>
+                            <constraint firstItem="vUM-oe-tBz" firstAttribute="top" secondItem="map-DA-8qE" secondAttribute="top" id="hDU-0Q-COW"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Find a Gym" id="InM-GE-ZbM"/>
+                    <connections>
+                        <outlet property="mapView" destination="vUM-oe-tBz" id="tYb-Ai-mFe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMo-og-FJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8167" y="51"/>
+        </scene>
+        <!--Daily Fact View Controller-->
         <scene sceneID="QTH-Az-vrs">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="gcW-nZ-EV2" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="gcW-nZ-EV2" customClass="DailyFactViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WTy-5A-IDY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1S-Z8-Hcr">
-                                <rect key="frame" x="58" y="219" width="298" height="459"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QW-4O-0Zh">
+                                <rect key="frame" x="80" y="105" width="254" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Fact">
+                                    <fragment content="Daily Fact!">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QW-4O-0Zh">
-                                <rect key="frame" x="80" y="105" width="254" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2q-o1-6ic">
+                                <rect key="frame" x="161" y="680" width="93" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1S-Z8-Hcr">
+                                <rect key="frame" x="58" y="188" width="298" height="459"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Nutritional Fact!">
+                                    <fragment content="Fact">
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -518,6 +553,10 @@
                         <color key="backgroundColor" red="0.81337909172644896" green="0.83806597543318606" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="JYn-ut-Q7x"/>
+                    <connections>
+                        <outlet property="backButton" destination="n2q-o1-6ic" id="kBB-iF-q6T"/>
+                        <outlet property="dailyFact" destination="B1S-Z8-Hcr" id="Znh-MA-9LA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpm-mY-Zbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -525,9 +564,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DNl-qR-T29"/>
+        <segue reference="Pkm-4T-jqF"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
