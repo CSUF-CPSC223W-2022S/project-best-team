@@ -22,12 +22,12 @@ class workoutGoal {
     var focusedMuscle: String
     var specificMuscle: String
     // Focused Muscles
-    var Muscle1 = "Shoulder"
-    var Muscle2 = "Arms"
-    var Muscle3 = "Chest"
-    var Muscle4 = "Back"
-    var Muscle5 = "Abdominals"
-    var Muscle6 = "Legs"
+    var Muscle1 : String = "Shoulder"
+    var Muscle2 : String = "Arms"
+    var Muscle3 : String = "Chest"
+    var Muscle4 : String = "Back"
+    var Muscle5 : String = "Abdominals"
+    var Muscle6 : String = "Legs"
     // Types of focused muscles
     var shoulder : [String] = ["Trapezius"]
     var arms : [String] = ["Biceps", "Triceps", "Forearms"]
@@ -37,8 +37,18 @@ class workoutGoal {
     var legs : [String] = ["Calves", "Legs", "Hamstrings", "Quadriceps"]
     
     var workoutIntro : String = "Workouts you should do:"
-    var trapeziusSchedule : String = ""
-
+    var trapeziusSchedule : String = "Barrel Shrug, Dumbell One Arm Row, Rack Pull, Face Pull, Dumbbell Prone Press"
+   
+    
+    var bicepsSchedule : String = ""
+    var tricpesSchedule : String = ""
+    var forearmsSchedule : String = ""
+    var chestSchedule : String = ""
+    var glutesSchedule : String = ""
+    var latsDorsiSchedule : String = ""
+    var abdominalsSchedule : String = ""
+    var legssSchedule : String = ""
+    
     init() {
         focusedMuscle = " "
         specificMuscle = " "
@@ -52,59 +62,26 @@ class workoutGoal {
         
     }
 
-    func generateWorkout1 (focusedMuscle : String) -> String { // Returns muscle options
-        if focusedMuscle == Muscle1 {
-            let shoulderOptions : String = shoulder[0]
-            return shoulderOptions
-       }
-          else if focusedMuscle == Muscle2 {
-              
-              let armOptions : String = arms[0] + arms [1] + arms [2]
-              return armOptions
-          }
-          else if focusedMuscle == Muscle3 {
-         
-              let chestOptions : String = chest[0]
-              return chestOptions
-         }
-         else if focusedMuscle == Muscle4 {
-          
-             let backOptions : String = back[0] + back [1]
-             return backOptions
-         }
-         else if focusedMuscle == Muscle5 {
-          
-             let abdominalsOptions : String = abdominals[0]
-             return abdominalsOptions
-         }
-         else if focusedMuscle == Muscle6 {
-         
-             let legOptions : String = legs[0] + legs[1] + legs[2] + legs[3]
-             return legOptions
-         }
-        else {
-            return "Error"
-        }
-    }
-
-        func generateWorkout2 (generateWorkout1: (String)-> String) -> String { // returns rough workout schedule
+        //
+    func generateWorkout2 (specificMuscle: String) -> String { //
             
-            if specificMuscle == shoulder[0] {
-            return "workout"
+        if specificMuscle == shoulder[0] {
+        
+            return workoutIntro + trapeziusSchedule
         }
-        else if specificMuscle == arms[0]{
-             return "Workout"
-        }
-        else if specificMuscle == arms[1] {
-             return "Workout"
-        }
-        else if specificMuscle == arms[2] {
-             return "Workout"
-        }
-        else if specificMuscle == arms[3] {
-             return "Workout"
-        }
-            else {
+            else if specificMuscle == arms[0]{
+                return "Workout"
+            }
+            else if specificMuscle == arms[1] {
+                return "Workout"
+            }
+            else if specificMuscle == arms[2] {
+                return "Workout"
+            }
+            else if specificMuscle == arms[3] {
+                return "Workout"
+            }
+            else if {
                 return "Error"
             }
         }
@@ -122,9 +99,44 @@ class workoutGoal {
         
         
         
-  //  }
+// Code that didnt make the cut
+
 //func generateWorkout (focusedMuscle : string, specificMuscle : String
 
+//func generateWorkout1 (focusedMuscle : String) -> String { // Returns muscle options
+//    if focusedMuscle == Muscle1 {
+//        let shoulderOptions : String = shoulder[0]
+//        return shoulderOptions
+//   }
+//      else if focusedMuscle == Muscle2 {
+//
+//          let armOptions : String = arms[0] + arms [1] + arms [2]
+//          return armOptions
+//      }
+//      else if focusedMuscle == Muscle3 {
+//
+//          let chestOptions : String = chest[0]
+//          return chestOptions
+//     }
+//     else if focusedMuscle == Muscle4 {
+//
+//         let backOptions : String = back[0] + back [1]
+//         return backOptions
+//     }
+//     else if focusedMuscle == Muscle5 {
+//
+//         let abdominalsOptions : String = abdominals[0]
+//         return abdominalsOptions
+//     }
+//     else if focusedMuscle == Muscle6 {
+//
+//         let legOptions : String = legs[0] + legs[1] + legs[2] + legs[3]
+//         return legOptions
+//     }
+//    else {
+//        return "Error"
+//    }
+//}
     
     
     
