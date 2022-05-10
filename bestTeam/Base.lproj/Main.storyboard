@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XYN-3f-I1e">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sEz-Jz-Nec">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,36 +8,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="I2c-iW-Mo2">
+        <!--View Controller-->
+        <scene sceneID="4KH-We-Xzn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DvA-oP-nL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="XYN-3f-I1e" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CAp-3C-hjl">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="c7v-NF-8ft"/>
-                        <segue destination="uBS-U2-HlN" kind="relationship" relationship="viewControllers" id="j2Z-CJ-ct1"/>
-                        <segue destination="Gpc-eT-Fzb" kind="relationship" relationship="viewControllers" id="873-DL-t3d"/>
-                        <segue destination="Lee-fw-AxO" kind="relationship" relationship="viewControllers" id="Txf-UP-Xcd"/>
-                        <segue destination="Vl4-1w-usk" kind="relationship" relationship="viewControllers" id="kEG-be-e8h"/>
-                        <segue destination="mIm-5Q-m84" kind="relationship" relationship="viewControllers" id="Zib-DE-9f5"/>
-                        <segue destination="tEY-eD-cOk" kind="relationship" relationship="viewControllers" id="HKj-R2-EY2"/>
-                    </connections>
-                </tabBarController>
+                <viewController storyboardIdentifier="Congrats" modalPresentationStyle="fullScreen" id="ZoV-Kb-NId" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZJu-Xw-xDR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGM-Ic-fUK">
+                                <rect key="frame" x="20" y="44" width="98" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt; Back"/>
+                                <connections>
+                                    <action selector="backToMain:" destination="3wc-qX-NVH" eventType="touchUpInside" id="UK6-4f-ipF"/>
+                                    <segue destination="sEz-Jz-Nec" kind="show" id="acI-bm-Yd5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAF-IK-csi">
+                                <rect key="frame" x="46" y="176" width="322" height="544"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Congratulations you made it to the next week! Click the back button to start your new schedule!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eaJ-6s-1WY"/>
+                        <color key="backgroundColor" red="0.72810135503073892" green="0.83634297253971479" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DGn-uJ-zX4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="3wc-qX-NVH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1323.1884057971015" y="50.892857142857139"/>
+            <point key="canvasLocation" x="2230.434782608696" y="-625.44642857142856"/>
         </scene>
-        <!--Sunday-->
+        <!--Sun-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFh-O5-afr">
@@ -74,6 +92,9 @@
                                     <segment title="Not Completed"/>
                                     <segment title="Completed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="Sunday:" destination="BYZ-38-t0r" eventType="valueChanged" id="zin-bV-Qhz"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-7O-Y1y">
                                 <rect key="frame" x="105" y="673" width="204" height="31"/>
@@ -88,19 +109,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96841138599999999" green="0.94076862029999997" blue="0.4736222518" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sunday" id="fB1-Ft-QVD"/>
+                    <tabBarItem key="tabBarItem" title="Sun" id="fB1-Ft-QVD"/>
                     <navigationItem key="navigationItem" id="Drb-rs-Cnf"/>
+                    <connections>
+                        <outlet property="SundayComp" destination="fEo-Md-1LY" id="19t-1F-0VM"/>
+                        <outlet property="SundayWrk" destination="XFh-O5-afr" id="MTo-3f-njP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2233.3333333333335" y="50.892857142857139"/>
+            <point key="canvasLocation" x="3143.4782608695655" y="50.892857142857139"/>
         </scene>
-        <!--Monday-->
+        <!--Mon-->
         <scene sceneID="EGQ-XO-neI">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="uBS-U2-HlN" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="uBS-U2-HlN" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EoL-CM-wzc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIP-U0-NFV">
@@ -124,6 +149,9 @@
                                     <segment title="Not Completed"/>
                                     <segment title="Completed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="Monday:" destination="uBS-U2-HlN" eventType="valueChanged" id="GnY-Bc-TeW"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKZ-Uc-fWm">
                                 <rect key="frame" x="147" y="79" width="120" height="40"/>
@@ -152,19 +180,23 @@
                         <viewLayoutGuide key="safeArea" id="MN8-H9-KwF"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Monday" id="DB8-nF-iZ1"/>
+                    <tabBarItem key="tabBarItem" title="Mon" id="DB8-nF-iZ1"/>
                     <navigationItem key="navigationItem" id="MY1-h8-7Qk"/>
+                    <connections>
+                        <outlet property="MondayComp" destination="tGb-lm-He6" id="qVg-H3-jbC"/>
+                        <outlet property="MondayWrk" destination="HIP-U0-NFV" id="tdZ-bB-bgN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RK-Z6-VXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2942.0289855072465" y="50.892857142857139"/>
+            <point key="canvasLocation" x="3852.1739130434785" y="50.892857142857139"/>
         </scene>
-        <!--Tuesday-->
+        <!--Tues-->
         <scene sceneID="J4O-xB-IN5">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Gpc-eT-Fzb" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Gpc-eT-Fzb" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hsx-BW-vI4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZz-kv-f9v">
@@ -188,6 +220,9 @@
                                     <segment title="Not Completed"/>
                                     <segment title="Completed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="Tuesday:" destination="Gpc-eT-Fzb" eventType="valueChanged" id="E3l-aQ-kEH"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srs-ff-Ozp">
                                 <rect key="frame" x="147" y="79" width="121" height="40"/>
@@ -216,19 +251,23 @@
                         <viewLayoutGuide key="safeArea" id="ng4-Mx-apS"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tuesday" id="N8f-Pj-9i4"/>
+                    <tabBarItem key="tabBarItem" title="Tues" id="N8f-Pj-9i4"/>
                     <navigationItem key="navigationItem" id="bQf-c7-ZHF"/>
+                    <connections>
+                        <outlet property="TuesdayComp" destination="avj-eY-qW6" id="9tg-y0-srP"/>
+                        <outlet property="TuesdayWrk" destination="FZz-kv-f9v" id="yYH-RP-epx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pr-af-nDy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3644.9275362318845" y="50.892857142857139"/>
+            <point key="canvasLocation" x="4555.072463768116" y="50.892857142857139"/>
         </scene>
-        <!--Wednesday-->
+        <!--Wed-->
         <scene sceneID="b4R-yh-Esd">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Lee-fw-AxO" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Lee-fw-AxO" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y2U-65-Tw5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rw-5a-0OD">
@@ -252,6 +291,9 @@
                                     <segment title="Not Completed"/>
                                     <segment title="Completed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="Wednesday:" destination="Lee-fw-AxO" eventType="valueChanged" id="XFH-nO-FfS"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMs-8D-GWF">
                                 <rect key="frame" x="124" y="79" width="166" height="40"/>
@@ -280,19 +322,24 @@
                         <viewLayoutGuide key="safeArea" id="4I3-LR-LdP"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Wednesday" id="bCP-oH-i2u"/>
+                    <tabBarItem key="tabBarItem" title="Wed" id="bCP-oH-i2u"/>
                     <navigationItem key="navigationItem" id="cL3-jf-REl"/>
+                    <connections>
+                        <outlet property="TuesdayComp" destination="wd8-Bp-2tL" id="hYU-cy-0n5"/>
+                        <outlet property="WednesdayComp" destination="wd8-Bp-2tL" id="F0G-zd-icR"/>
+                        <outlet property="WednesdayWrk" destination="7Rw-5a-0OD" id="Vmt-bP-ast"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APD-a8-aVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4336.231884057971" y="50.892857142857139"/>
+            <point key="canvasLocation" x="5244.9275362318849" y="50.892857142857139"/>
         </scene>
-        <!--Thursday-->
+        <!--Thurs-->
         <scene sceneID="Kyw-rc-BAg">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Vl4-1w-usk" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Vl4-1w-usk" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hGn-jo-dKi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4J-88-Vxx">
@@ -316,6 +363,9 @@
                                     <segment title="Not Completed"/>
                                     <segment title="Completed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="Thursday:" destination="Vl4-1w-usk" eventType="valueChanged" id="8mR-gk-8CX"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw4-mK-au3">
                                 <rect key="frame" x="139" y="79" width="136" height="40"/>
@@ -344,19 +394,23 @@
                         <viewLayoutGuide key="safeArea" id="nku-4R-PgN"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Thursday" id="v1P-Mp-Fds"/>
+                    <tabBarItem key="tabBarItem" title="Thurs" id="v1P-Mp-Fds"/>
                     <navigationItem key="navigationItem" id="80j-9L-oKo"/>
+                    <connections>
+                        <outlet property="ThursdayComp" destination="4MV-sb-8L9" id="06I-3h-g72"/>
+                        <outlet property="ThursdayWrk" destination="m4J-88-Vxx" id="Vv5-1R-XYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyZ-iH-uN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5049.275362318841" y="50.892857142857139"/>
+            <point key="canvasLocation" x="5959.420289855073" y="50.892857142857139"/>
         </scene>
-        <!--Friday-->
+        <!--Fri-->
         <scene sceneID="3Wc-6R-gZA">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="mIm-5Q-m84" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="mIm-5Q-m84" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5cs-0C-OC4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMt-GY-C4D">
@@ -380,6 +434,9 @@
                                     <segment title="Not Completed"/>
                                     <segment title="Completed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="Friday:" destination="mIm-5Q-m84" eventType="valueChanged" id="k7K-ZN-BGf"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbg-3o-m8A">
                                 <rect key="frame" x="105" y="673" width="204" height="31"/>
@@ -408,19 +465,23 @@
                         <viewLayoutGuide key="safeArea" id="bHo-q7-yJp"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Friday" id="RSm-oX-DZY"/>
+                    <tabBarItem key="tabBarItem" title="Fri" id="RSm-oX-DZY"/>
                     <navigationItem key="navigationItem" id="gl4-fp-1x4"/>
+                    <connections>
+                        <outlet property="FridayComp" destination="46l-Qh-Rcu" id="eES-j8-jHf"/>
+                        <outlet property="FridayWrk" destination="fMt-GY-C4D" id="WbD-Al-g0d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bn8-AY-vlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5744.9275362318849" y="50.892857142857139"/>
+            <point key="canvasLocation" x="6655.0724637681169" y="50.892857142857139"/>
         </scene>
-        <!--Saturday-->
+        <!--Sat-->
         <scene sceneID="i3U-br-79m">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="tEY-eD-cOk" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="tEY-eD-cOk" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VGt-91-7uj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2U-wo-05w">
@@ -444,6 +505,9 @@
                                     <segment title="Not Completed"/>
                                     <segment title="Completed"/>
                                 </segments>
+                                <connections>
+                                    <action selector="Saturday:" destination="tEY-eD-cOk" eventType="valueChanged" id="s1a-Hk-Arh"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8w-Ch-R2O">
                                 <rect key="frame" x="143" y="79" width="128" height="40"/>
@@ -471,36 +535,27 @@
                         <viewLayoutGuide key="safeArea" id="Jcl-eT-Hhd"/>
                         <color key="backgroundColor" red="0.91976243260000001" green="0.54957085959999996" blue="0.85408199060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Saturday" id="hKd-81-GwK"/>
+                    <tabBarItem key="tabBarItem" title="Sat" id="hKd-81-GwK"/>
                     <navigationItem key="navigationItem" id="1Ng-Pz-fnZ"/>
+                    <connections>
+                        <outlet property="SaturdayComp" destination="fHv-tp-XKa" id="D7F-57-xJU"/>
+                        <outlet property="SaturdayWrk" destination="d2U-wo-05w" id="iM3-E0-Mhp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSP-pq-uWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6439.130434782609" y="50.892857142857139"/>
+            <point key="canvasLocation" x="7349.275362318841" y="50.892857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QTH-Az-vrs">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="gcW-nZ-EV2" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="gcW-nZ-EV2" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WTy-5A-IDY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1S-Z8-Hcr">
-                                <rect key="frame" x="58" y="219" width="298" height="459"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Fact">
-                                        <attributes>
-                                            <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QW-4O-0Zh">
-                                <rect key="frame" x="80" y="105" width="254" height="37"/>
+                                <rect key="frame" x="80" y="108" width="254" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Nutritional Fact!">
@@ -513,19 +568,75 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orr-yX-sZS">
+                                <rect key="frame" x="20" y="58" width="96" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="&lt; Back">
+                                            <attributes>
+                                                <font key="NSFont" size="25" name="TimesNewRomanPSMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR0-IP-mvz">
+                                <rect key="frame" x="80" y="181" width="254" height="579"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Fact">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="24"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HFK-h3-q5k"/>
                         <color key="backgroundColor" red="0.81337909172644896" green="0.83806597543318606" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="JYn-ut-Q7x"/>
+                    <connections>
+                        <outlet property="fact" destination="XR0-IP-mvz" id="MmT-IN-Lhe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kpm-mY-Zbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4334.7826086956529" y="860.49107142857144"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1Bs-7X-tlb">
+            <objects>
+                <tabBarController wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="sEz-Jz-Nec" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Q2T-lA-mHy"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" itemWidth="10" id="sSo-XI-bAd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance" backgroundImageContentMode="scaleToFill" stackedItemPositioning="centered" stackedItemWidth="29"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="oda-cj-i2o"/>
+                        <segue destination="uBS-U2-HlN" kind="relationship" relationship="viewControllers" id="PJI-h7-1sk"/>
+                        <segue destination="Gpc-eT-Fzb" kind="relationship" relationship="viewControllers" id="d2v-GR-IBL"/>
+                        <segue destination="Lee-fw-AxO" kind="relationship" relationship="viewControllers" id="18f-RX-1cE"/>
+                        <segue destination="Vl4-1w-usk" kind="relationship" relationship="viewControllers" id="Bca-lb-5ia"/>
+                        <segue destination="mIm-5Q-m84" kind="relationship" relationship="viewControllers" id="zVF-aF-j47"/>
+                        <segue destination="tEY-eD-cOk" kind="relationship" relationship="viewControllers" id="hzp-zn-jha"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VV4-94-Ejt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2233.3333333333335" y="50.892857142857139"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DNl-qR-T29"/>
+        <segue reference="Pkm-4T-jqF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemGreenColor">

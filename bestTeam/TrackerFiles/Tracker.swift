@@ -7,89 +7,94 @@
 import Foundation
 
 class Tracker {
-    var currentDay: Int
-    var weekCount: Int
-    var weekday: [Int : String] = [:]
+    var currentDay: Int = 0
+//    var weekCount: Int = 0
+    var trackComp: [Int] = [0, 0, 0, 0, 0, 0, 0]
     //var workouts: [String: func] = [:]
     
     init() {
         currentDay = 0
-        weekCount = 0
-        weekday[0] = "Sunday"
-        weekday[1] = "Monday"
-        weekday[2] = "Tuesday"
-        weekday[3] = "Wednesday"
-        weekday[4] = "Thursday"
-        weekday[5] = "Friday"
-        weekday[6] = "Saturday"
+//        weekCount = 0
+        trackComp = [0, 0, 0, 0, 0, 0, 0]
+    }
+
+//    init(_ day: Int) {
+//        currentDay = day
+//        weekCount = 0
+//        trackComp = [0, 0, 0, 0, 0, 0, 0]
+//        trackComp[day] = 1
+//    }
+    
+    func reset() -> Void {
+        trackComp = [0, 0, 0, 0, 0, 0, 0]
     }
     
-    init(_ day: Int) {
-        currentDay = day
-        weekCount = 0
-        weekday[0] = "Sunday"
-        weekday[1] = "Monday"
-        weekday[2] = "Tuesday"
-        weekday[3] = "Wednesday"
-        weekday[4] = "Thursday"
-        weekday[5] = "Friday"
-        weekday[6] = "Saturday"
-    }
-    
-    func nextDay() ->String {
-        var index: Int = 0
-        var dayOfWeek: String = ""
-        if(currentDay < 6) {
-            index += 1
-            dayOfWeek = weekday[index] ?? ""
+    func nextDay() -> Void {
+        if (currentDay < 7) {
+            trackComp[currentDay] = 1
+            currentDay += 1
         } else {
-            index = 0
-            weekCount += 1
-            weekTracker()
-            dayOfWeek = weekday[1] ?? ""
-        }
-        return dayOfWeek
-    }
-    
-    func workoutForDay() ->Void { //change return type
-        //options: chests, legs, cardio, back, abs, arms, rest day
-        if(currentDay == 0) {
-            //return workout day 1
-        } else if (currentDay == 1) {
-            //return workout day 2
-        } else if (currentDay == 2) {
-            //return workout day 3
-        } else if (currentDay == 3) {
-            //return workout day 4
-        } else if (currentDay == 4) {
-            //return workout day 5
-        } else if (currentDay == 5) {
-            //return workout day 5
-        } else if (currentDay == 6) {
-            //return workout day 6
-        } else {
-            //return workout day 7 / rest day / suggested workout
+            currentDay = 0
+//            weekCount = 0
         }
     }
+    
+    func checkArray(array: [Int]) -> Bool {
+        var completion = true
         
-    func weekTracker() ->Void {
-        print("Congratulations! You made it through week \(weekCount)!")
-        let randomPhrase = Int.random(in: 1...5)
-        switch randomPhrase {
-        case 1:
-            print("Keep up the good work!")
-        case 2:
-            print("Awesome job!")
-        case 3:
-            print("Doing great!")
-        case 4:
-            print("Looking good!")
-        case 5:
-            print("Great Work!")
-        default:
-            print("Amazing progress!")
+        for item in array {
+            if (item == 0) {
+                completion = false
+            }
         }
+        print(completion)
+        return completion
     }
+    
+//=======================================================================================
+//Unused:
+//    func weekTracker() -> String {
+//        let congrats = "Congratulations! You made it through week \(weekCount)! "
+//        var statement = ""
+//        let randomPhrase = Int.random(in: 1...5)
+//        switch randomPhrase {
+//        case 1:
+//            statement = "Keep up the good work!"
+//        case 2:
+//            statement = "Awesome job!"
+//        case 3:
+//            statement = "Doing great!"
+//        case 4:
+//            statement = "Looking good!"
+//        case 5:
+//            statement = "Great Work!"
+//        default:
+//            statement = "Amazing progress!"
+//        }
+//        return congrats + statement
+//    }
+
+//    func workoutForDay() ->Void { //change return type
+//        //options: chests, legs, cardio, back, abs, arms, rest day
+//        if(currentDay == 0) {
+//            //return workout day 1
+//        } else if (currentDay == 1) {
+//            //return workout day 2
+//        } else if (currentDay == 2) {
+//            //return workout day 3
+//        } else if (currentDay == 3) {
+//            //return workout day 4
+//        } else if (currentDay == 4) {
+//            //return workout day 5
+//        } else if (currentDay == 5) {
+//            //return workout day 5
+//        } else if (currentDay == 6) {
+//            //return workout day 6
+//        } else {
+//            //return workout day 7 / rest day / suggested workout
+//        }
+//    }
+    
 }
 
 //=======================================================================================

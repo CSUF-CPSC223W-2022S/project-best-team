@@ -8,12 +8,119 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //workouts outlets
+    @IBOutlet weak var SundayWrk: UILabel!
+    @IBOutlet weak var MondayWrk: UILabel!
+    @IBOutlet weak var TuesdayWrk: UILabel!
+    @IBOutlet weak var WednesdayWrk: UILabel!
+    @IBOutlet weak var ThursdayWrk: UILabel!
+    @IBOutlet weak var FridayWrk: UILabel!
+    @IBOutlet weak var SaturdayWrk: UILabel!
+    
+    //segmented control outlets
+    @IBOutlet weak var SundayComp: UISegmentedControl!
+    @IBOutlet weak var MondayComp: UISegmentedControl!
+    @IBOutlet weak var TuesdayComp: UISegmentedControl!
+    @IBOutlet weak var WednesdayComp: UISegmentedControl!
+    @IBOutlet weak var ThursdayComp: UISegmentedControl!
+    @IBOutlet weak var FridayComp: UISegmentedControl!
+    @IBOutlet weak var SaturdayComp: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //workouts print
+        //SundayWrk.text =
+        //MondayWrk.text =
+        //TuesdayWrk.text =
+        //WednesdayWrk.text =
+        //ThursdayWrk.text =
+        //FridayWrk.text =
+        //SaturdayWrk.text =
     }
 
+    let tracker = Tracker()
+    
+    //segmented control actions
+    @IBAction func Sunday(_ sender: Any) {
+        tracker.nextDay()
+        SundayComp.selectedSegmentIndex = tracker.trackComp[0]
+        print(tracker.trackComp)
+    }
+    
+    @IBAction func Monday(_ sender: Any) {
+        if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
+            baseController.tracker.nextDay()
+            MondayComp.selectedSegmentIndex = (baseController.tracker.trackComp[1])
+            print(baseController.tracker.trackComp)
+        }
+    }
+    
+    @IBAction func Tuesday(_ sender: Any) {
+        if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
+            baseController.tracker.nextDay()
+            TuesdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[2])
+            print(baseController.tracker.trackComp)
+        }
+    }
+    
+    @IBAction func Wednesday(_ sender: Any) {
+        if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
+            baseController.tracker.nextDay()
+            WednesdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[3])
+            print(baseController.tracker.trackComp)
+        }
+    }
+    
+    @IBAction func Thursday(_ sender: Any) {
+        if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
+            baseController.tracker.nextDay()
+            ThursdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[4])
+
+            print(baseController.tracker.trackComp)
+        }
+    }
+    
+    @IBAction func Friday(_ sender: Any) {
+        if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
+            baseController.tracker.nextDay()
+            FridayComp.selectedSegmentIndex = (baseController.tracker.trackComp[5])
+            print(baseController.tracker.trackComp)
+        }
+    }
+    
+    @IBAction func Saturday(_ sender: Any) {
+        if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
+            baseController.tracker.nextDay()
+            SaturdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[6])
+            let Storyboard  = UIStoryboard(name: "Main", bundle: nil)
+            let vc = Storyboard.instantiateViewController(withIdentifier: "Congrats")
+            present(vc , animated: tracker.checkArray(array: baseController.tracker.trackComp), completion: nil)
+            print(baseController.tracker.trackComp)
+        }
+    }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//
+//        if (animated == true) {
+//            let congrats = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Congrats") as UIViewController
+//
+//            self.present(congrats, animated: true)
+//        }
+//    }
+    
+//        resetComp()
+    
+//    func resetComp() {
+//        SundayComp.selectedSegmentIndex = 0
+//        MondayComp.selectedSegmentIndex = 0
+//        TuesdayComp.selectedSegmentIndex = 0
+//        WednesdayComp.selectedSegmentIndex = 0
+//        ThursdayComp.selectedSegmentIndex = 0
+//        FridayComp.selectedSegmentIndex = 0
+//        SaturdayComp.selectedSegmentIndex = 0
+//    }
 
 }
 
