@@ -8,6 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //BMI outlets - text
+    @IBOutlet weak var feettxt: UITextField!
+    @IBOutlet weak var inchestxt: UITextField!
+    @IBOutlet weak var poundstxt: UITextField!
+    @IBOutlet weak var centimeterstxt: UITextField!
+    @IBOutlet weak var kilogramstxt: UITextField!
+    //BMI outlets - math
+    @IBOutlet weak var calculate: UIButton!
+    
     //workouts outlets
     @IBOutlet weak var SundayWrk: UILabel!
     @IBOutlet weak var MondayWrk: UILabel!
@@ -29,17 +38,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        //workouts print
-        //SundayWrk.text =
-        //MondayWrk.text =
-        //TuesdayWrk.text =
-        //WednesdayWrk.text =
-        //ThursdayWrk.text =
-        //FridayWrk.text =
-        //SaturdayWrk.text =
     }
-
+    
+    //calculate
+    @IBAction func calculateBMI(_ sender: Any) {
+        //BMI - standard
+        let feetResult: Int? = Int(feettxt.text!)
+        let inchesResult: Int? = Int(inchestxt.text!)
+        let poundsResult: Double? = Double(poundstxt.text!)
+        let standard = StandardBMI(feet: feetResult!, inches: inchesResult!, pounds: poundsResult!)
+        
+        //BMI - metric
+        let centimetersResult: Double? = Double(centimeterstxt.text!)
+        let kilogramsResult: Double? = Double(kilogramstxt.text!)
+        let metric = MetricBMI(centimeters: centimetersResult!, kilograms: kilogramsResult!)
+        
+    }
+    
+    //Tracker
     let tracker = Tracker()
     
     //segmented control actions

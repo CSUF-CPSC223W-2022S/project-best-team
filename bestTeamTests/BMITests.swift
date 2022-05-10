@@ -4,7 +4,6 @@
 //
 //  Created by Edison Chung on 3/17/22.
 //
-
 import XCTest
 @testable import bestTeam
 
@@ -32,44 +31,83 @@ class BMITests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
-    func testInitializerIndex() {
-        let index = BMI(feet: 5, inches: 10, pounds: 145)
+    // ---------- Standard BMI Tests ----------
+    func testSInitializerIndex() {
+        let index = StandardBMI(feet: 5, inches: 10, pounds: 145)
         XCTAssertEqual(index.index, 20.8)
     }
     
-    func testIntializerHeight() {
-        let index = BMI(feet: 5, inches: 10, pounds: 145)
+    func testSIntializerHeight() {
+        let index = StandardBMI(feet: 5, inches: 10, pounds: 145)
         XCTAssertEqual(index.height, 70)
     }
     
-    func testInitializerWeight() {
-        let index = BMI(feet: 5, inches: 10, pounds: 145.2)
+    func testSInitializerWeight() {
+        let index = StandardBMI(feet: 5, inches: 10, pounds: 145.2)
         XCTAssertEqual(index.weight, 145.2)
     }
 
-    func testUnderweight() {
-        let index = BMI(feet: 5, inches: 10, pounds: 100)
+    func testSUnderweight() {
+        let index = StandardBMI(feet: 5, inches: 10, pounds: 100)
         XCTAssertEqual(index.index, 14.3)
         XCTAssertEqual(index.category, "Underweight")
     }
     
-    func testNormal() {
-        let index = BMI(feet: 5, inches: 10, pounds: 145)
+    func testSNormal() {
+        let index = StandardBMI(feet: 5, inches: 10, pounds: 145)
         XCTAssertEqual(index.index, 20.8)
         XCTAssertEqual(index.category, "Normal")
     }
     
-    func testOverweight() {
-        let index = BMI(feet: 5, inches: 10, pounds: 200)
+    func testSOverweight() {
+        let index = StandardBMI(feet: 5, inches: 10, pounds: 200)
         XCTAssertEqual(index.index, 28.7)
         XCTAssertEqual(index.category, "Overweight")
     }
     
-    func testObese() {
-        let index = BMI(feet: 5, inches: 10, pounds: 250)
+    func testSObese() {
+        let index = StandardBMI(feet: 5, inches: 10, pounds: 250)
         XCTAssertEqual(index.index, 35.9)
         XCTAssertEqual(index.category, "Obese")
     }
+    
+    // ---------- Metric BMI Tests ----------
+    func testMInitializerIndex() {
+        let index = MetricBMI(centimeters: 177.8, kilograms: 20)
+        XCTAssertEqual(index.index, 6.3)
+    }
+    
+    func testMIntializerHeight() {
+        let index = MetricBMI(centimeters: 177.8, kilograms: 65.77)
+        XCTAssertEqual(index.height, 177.8)
+    }
+    
+    func testMInitializerWeight() {
+        let index = MetricBMI(centimeters: 177.8, kilograms: 65.77)
+        XCTAssertEqual(index.weight, 65.77)
+    }
 
+    func testMUnderweight() {
+        let index = MetricBMI(centimeters: 177.8, kilograms: 20)
+        XCTAssertEqual(index.index, 6.3)
+        XCTAssertEqual(index.category, "Underweight")
+    }
+    
+    func testMNormal() {
+        let index = MetricBMI(centimeters: 177.8, kilograms: 60)
+        XCTAssertEqual(index.index, 19.0)
+        XCTAssertEqual(index.category, "Normal")
+    }
+    
+    func testMOverweight() {
+        let index = MetricBMI(centimeters: 177.8, kilograms: 80)
+        XCTAssertEqual(index.index, 25.3)
+        XCTAssertEqual(index.category, "Overweight")
+    }
+    
+    func testMObese() {
+        let index = MetricBMI(centimeters: 177.8, kilograms: 100)
+        XCTAssertEqual(index.index, 31.6)
+        XCTAssertEqual(index.category, "Obese")
+    }
 }
