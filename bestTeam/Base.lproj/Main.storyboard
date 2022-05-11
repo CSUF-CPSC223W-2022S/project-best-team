@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -100,6 +101,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <connections>
+                                    <segue destination="GVg-LY-00L" kind="show" id="WXF-2J-MJd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -168,6 +172,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <connections>
+                                    <segue destination="GVg-LY-00L" kind="show" id="6UU-2r-pS4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MN8-H9-KwF"/>
@@ -236,6 +243,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <connections>
+                                    <segue destination="GVg-LY-00L" kind="show" id="u4M-it-Spf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ng4-Mx-apS"/>
@@ -251,6 +261,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pr-af-nDy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4555.072463768116" y="50.892857142857139"/>
+        </scene>
+        <!--Daily Fact View Controller-->
+        <scene sceneID="IV7-U2-due">
+            <objects>
+                <viewController id="GVg-LY-00L" customClass="DailyFactViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="apw-NP-Ekc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Fact" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNZ-8o-V3O">
+                                <rect key="frame" x="0.0" y="57" width="414" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hs7-L3-Hql">
+                                <rect key="frame" x="20" y="268" width="374" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="go0-Fb-4Xd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Y8-aV-3It"/>
+                    <connections>
+                        <outlet property="dailyFact" destination="hs7-L3-Hql" id="hMX-JX-2sd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dso-6O-uYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5244.9275362318849" y="891.96428571428567"/>
         </scene>
         <!--Wed-->
         <scene sceneID="b4R-yh-Esd">
@@ -304,6 +349,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <connections>
+                                    <segue destination="GVg-LY-00L" kind="show" id="gag-Zk-Qpj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4I3-LR-LdP"/>
@@ -373,6 +421,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <connections>
+                                    <segue destination="GVg-LY-00L" kind="show" id="Cx2-FX-mZp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nku-4R-PgN"/>
@@ -427,6 +478,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <connections>
+                                    <segue destination="GVg-LY-00L" kind="show" id="wO3-4H-wPY"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv1-Yh-iOA">
                                 <rect key="frame" x="160" y="80" width="94" height="40"/>
@@ -508,6 +562,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
+                                <connections>
+                                    <segue destination="GVg-LY-00L" kind="show" id="pOm-Mh-bQO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jcl-eT-Hhd"/>
@@ -523,6 +580,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSP-pq-uWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7349.275362318841" y="50.892857142857139"/>
+        </scene>
+        <!--Find a Gym-->
+        <scene sceneID="Jqq-FZ-FXS">
+            <objects>
+                <viewController id="uPh-Zm-7XU" customClass="MapViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F51-27-I9x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KML-J1-dPN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="793"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="alG-I6-xUF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KML-J1-dPN" firstAttribute="top" secondItem="alG-I6-xUF" secondAttribute="top" id="C1M-pY-jwz"/>
+                            <constraint firstItem="KML-J1-dPN" firstAttribute="leading" secondItem="alG-I6-xUF" secondAttribute="leading" id="TpI-KO-UlL"/>
+                            <constraint firstItem="alG-I6-xUF" firstAttribute="bottom" secondItem="KML-J1-dPN" secondAttribute="bottom" id="Wfg-tT-S0S"/>
+                            <constraint firstItem="alG-I6-xUF" firstAttribute="trailing" secondItem="KML-J1-dPN" secondAttribute="trailing" id="pyC-WU-MWc"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Find a Gym" id="cDo-Pv-gpa"/>
+                    <connections>
+                        <outlet property="mapView" destination="KML-J1-dPN" id="WZj-jX-Vs9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWl-zX-fix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8109" y="51"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NWS-HT-PNI">
@@ -567,6 +654,7 @@
                         <segue destination="Vl4-1w-usk" kind="relationship" relationship="viewControllers" id="Bca-lb-5ia"/>
                         <segue destination="mIm-5Q-m84" kind="relationship" relationship="viewControllers" id="zVF-aF-j47"/>
                         <segue destination="tEY-eD-cOk" kind="relationship" relationship="viewControllers" id="hzp-zn-jha"/>
+                        <segue destination="uPh-Zm-7XU" kind="relationship" relationship="viewControllers" id="HeG-5d-KeX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VV4-94-Ejt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -736,4 +824,12 @@
             <point key="canvasLocation" x="1060.8695652173915" y="50.892857142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pOm-Mh-bQO"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

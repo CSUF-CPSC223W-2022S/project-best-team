@@ -9,20 +9,14 @@ import UIKit
 
 class DailyFactViewController: UIViewController {
 
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var dailyFact: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dailyFact.text = getFact(date: getDayNum())
         // Do any additional setup after loading the view.
-        backButton.addTarget(self, action: #selector(goBack), for: .touchUpInside)
     }
-    
-    @objc func goBack() {
-        dismiss(animated: true, completion: nil)
-    }
-    
+
 
     /*
     // MARK: - Navigation
