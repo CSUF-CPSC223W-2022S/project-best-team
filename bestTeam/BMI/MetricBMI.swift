@@ -18,5 +18,4 @@ class MetricBMI: BMI {
         super.init()
         self.index = round(((703 * weight) / Double((height * height))) * 10) / 10.0
     }
-    
 }
