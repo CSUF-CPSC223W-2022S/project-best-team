@@ -100,9 +100,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
-                                <connections>
-                                    <segue destination="gcW-nZ-EV2" kind="show" id="Pkm-4T-jqF"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -171,9 +168,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
-                                <connections>
-                                    <segue destination="gcW-nZ-EV2" kind="show" id="SkV-ty-n3R"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MN8-H9-KwF"/>
@@ -242,9 +236,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
-                                <connections>
-                                    <segue destination="gcW-nZ-EV2" kind="show" id="oFp-k2-BtL"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ng4-Mx-apS"/>
@@ -313,9 +304,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
-                                <connections>
-                                    <segue destination="gcW-nZ-EV2" kind="show" id="elb-fu-fKJ"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4I3-LR-LdP"/>
@@ -385,9 +373,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
-                                <connections>
-                                    <segue destination="gcW-nZ-EV2" kind="show" id="sHr-TD-cpe"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nku-4R-PgN"/>
@@ -442,9 +427,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
-                                <connections>
-                                    <segue destination="gcW-nZ-EV2" kind="show" id="DNl-qR-T29"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cv1-Yh-iOA">
                                 <rect key="frame" x="160" y="80" width="94" height="40"/>
@@ -526,9 +508,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here for Nutrition Fact"/>
-                                <connections>
-                                    <segue destination="gcW-nZ-EV2" kind="show" id="vh1-u9-RgE"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jcl-eT-Hhd"/>
@@ -544,68 +523,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSP-pq-uWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7349.275362318841" y="50.892857142857139"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="QTH-Az-vrs">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="gcW-nZ-EV2" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WTy-5A-IDY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0QW-4O-0Zh">
-                                <rect key="frame" x="80" y="108" width="254" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Nutritional Fact!">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="36" name="TimesNewRomanPSMT"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Orr-yX-sZS">
-                                <rect key="frame" x="20" y="58" width="96" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="&lt; Back">
-                                            <attributes>
-                                                <font key="NSFont" size="25" name="TimesNewRomanPSMT"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR0-IP-mvz">
-                                <rect key="frame" x="80" y="181" width="254" height="579"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Fact">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="24"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="HFK-h3-q5k"/>
-                        <color key="backgroundColor" red="0.81337909172644896" green="0.83806597543318606" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="JYn-ut-Q7x"/>
-                    <connections>
-                        <outlet property="fact" destination="XR0-IP-mvz" id="MmT-IN-Lhe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpm-mY-Zbg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4334.7826086956529" y="860.49107142857144"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NWS-HT-PNI">
@@ -659,7 +576,6 @@
         <!--View Controller-->
         <scene sceneID="C4P-9H-5v1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="axH-nc-M43" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="go4-pU-cej" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yUF-Zn-d8x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -815,11 +731,9 @@
                         <outlet property="pounds" destination="kgX-C6-npf" id="BSX-19-lFV"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axH-nc-M43" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060.8695652173915" y="50.892857142857139"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Pkm-4T-jqF"/>
-    </inferredMetricsTieBreakers>
 </document>
