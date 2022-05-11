@@ -9,20 +9,16 @@ import Foundation
 
 class BMI {
     var index: Double
-    var category: Int {
+    var category: String {
         switch index {
         case 0..<18.5:
-            //Underweight
-            return 2
+            return "Underweight"
         case 18.5...24.9:
-            //Normal
-            return 4
+            return "Normal"
         case 25...29.9:
-            return 3
-            //Overweight
+            return "Overweight"
         default:
-            return 1
-            //Obese
+            return "Obese"
         }
     }
     
