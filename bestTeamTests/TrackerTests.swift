@@ -17,46 +17,33 @@ class TrackerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testSunday() {
+    func testReset() {
         let trackerValue = Tracker()
-        trackerValue.currentDay = 0
-        XCTAssertEqual(trackerValue.weekday[trackerValue.currentDay], "Sunday")
+        trackerValue.reset()
+        XCTAssertEqual(trackerValue.trackComp, [0, 0, 0, 0, 0, 0, 0])
     }
     
-    func testMonday() {
+    func testCheckArraypPass() {
         let trackerValue = Tracker()
-        trackerValue.currentDay = 1
-        XCTAssertEqual(trackerValue.weekday[trackerValue.currentDay], "Monday")
+        let check = trackerValue.checkArray(array: [1, 1, 1, 1, 1, 1, 1])
+        XCTAssertEqual(check, true)
     }
     
-    func testTuesday() {
+    func testCheckArrayFail() {
         let trackerValue = Tracker()
-        trackerValue.currentDay = 2
-        XCTAssertEqual(trackerValue.weekday[trackerValue.currentDay], "Tuesday")
+        let check = trackerValue.checkArray(array: [0, 0, 0, 0, 0, 0, 0])
+        XCTAssertEqual(check, false)
     }
     
-    func testWednesday() {
+    func testNextDay() {
         let trackerValue = Tracker()
-        trackerValue.currentDay = 3
-        XCTAssertEqual(trackerValue.weekday[trackerValue.currentDay], "Wednesday")
+        trackerValue.nextDay()
+        XCTAssertEqual(trackerValue.currentDay, 1)
     }
     
-    func testThursday() {
+    func testArrayUpdate() {
         let trackerValue = Tracker()
-        trackerValue.currentDay = 4
-        XCTAssertEqual(trackerValue.weekday[trackerValue.currentDay], "Thursday")
+        trackerValue.nextDay()
+        XCTAssertEqual(trackerValue.trackComp, [1, 0, 0, 0, 0, 0, 0])
     }
-    
-    func testFriday() {
-        let trackerValue = Tracker()
-        trackerValue.currentDay = 5
-        XCTAssertEqual(trackerValue.weekday[trackerValue.currentDay], "Friday")
-    }
-    
-    func testSaturday() {
-        let trackerValue = Tracker()
-        trackerValue.currentDay = 6
-        XCTAssertEqual(trackerValue.weekday[trackerValue.currentDay], "Saturday")
-    }
-    
 }
