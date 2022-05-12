@@ -37,8 +37,7 @@ class workoutGoal {
     var legs : [String] = ["Calves", "Legs", "Hamstrings", "Quadriceps"]
     
     var workoutIntro : String = "Workouts you should do:"
-    //var trapeziusSchedule : [String : Int] = ["Barrel Shrug": 1, "Dumbell One Arm Row": 2, "Rack Pull": 2, "Face Pull": 3, ]
-       
+    var trapeziusSchedule : [String : Int] = ["Barrel Shrug": 1, "Dumbell One Arm Row": 2, "Rack Pull": 2, "Face Pull": 3, ]
     var bicepsSchedule : String = ""
     var tricpesSchedule : String = ""
     var forearmsSchedule : String = ""
@@ -62,8 +61,7 @@ class workoutGoal {
         legs = []
         intensity = 0
     }
-
-        //
+    
     func generateWorkout2 (specificMuscle: String) -> String { //
             
         if specificMuscle == shoulder[0] {
