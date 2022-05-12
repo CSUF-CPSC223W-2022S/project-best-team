@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sEz-Jz-Nec">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="go4-pU-cej">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -611,29 +611,6 @@
             </objects>
             <point key="canvasLocation" x="8109" y="51"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="NWS-HT-PNI">
-            <objects>
-                <viewController id="HXb-hn-Yi7" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xrR-EL-ffJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG6-6X-7Q5">
-                                <rect key="frame" x="122" y="755" width="170" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click Here to Continue"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="WHo-hv-jOY"/>
-                        <color key="backgroundColor" red="0.74448797615634144" green="0.89686239854276517" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ObG-0O-H1B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1061" y="51"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1Bs-7X-tlb">
             <objects>
@@ -675,7 +652,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Click Here to Continue"/>
                                 <connections>
-                                    <action selector="calculateBMI:" destination="go4-pU-cej" eventType="touchUpInside" id="4vo-gX-Hf4"/>
+                                    <action selector="workoutsPrint:" destination="go4-pU-cej" eventType="touchUpInside" id="vnv-9A-KwP"/>
+                                    <segue destination="sEz-Jz-Nec" kind="show" id="MEV-Dj-DV4"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csO-Vk-hkR">
@@ -810,22 +788,15 @@
                         <viewLayoutGuide key="safeArea" id="tC3-MX-Wdv"/>
                         <color key="backgroundColor" red="0.74448797619999996" green="0.89686239850000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <connections>
-                        <outlet property="calculate" destination="KT4-2q-hUr" id="GSv-nZ-edR"/>
-                        <outlet property="centimeters" destination="Ake-re-Cb8" id="lgV-7l-tok"/>
-                        <outlet property="feet" destination="csO-Vk-hkR" id="JfK-r9-Kgj"/>
-                        <outlet property="inches" destination="hAW-jO-C33" id="Zrx-nl-UnL"/>
-                        <outlet property="kilograms" destination="tZD-y3-SpF" id="9Hr-P9-BN5"/>
-                        <outlet property="pounds" destination="kgX-C6-npf" id="BSX-19-lFV"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axH-nc-M43" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060.8695652173915" y="50.892857142857139"/>
+            <point key="canvasLocation" x="1381" y="51"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pOm-Mh-bQO"/>
+        <segue reference="MEV-Dj-DV4"/>
+        <segue reference="WXF-2J-MJd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

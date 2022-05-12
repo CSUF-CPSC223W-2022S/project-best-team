@@ -15,7 +15,6 @@ class ViewController: UIViewController {
 //    @IBOutlet weak var centimeterstxt: UITextField!
 //    @IBOutlet weak var kilogramstxt: UITextField!
 //    //BMI outlets - math
-//    @IBOutlet weak var calculate: UIButton!
     
     //workouts outlets
     @IBOutlet weak var SundayWrk: UILabel!
@@ -117,7 +116,16 @@ class ViewController: UIViewController {
         }
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
+    @IBAction func workoutsPrint(_ sender: Any) {
+//        SundayWrk.text = ""
+//        MondayWrk.text = ""
+//        TuesdayWrk.text = ""
+//        WednesdayWrk.text = ""
+//        ThursdayWrk.text = ""
+//        FridayWrk.text = ""
+//        SaturdayWrk.text = ""
+    }
+    //    override func viewWillAppear(_ animated: Bool) {
 //
 //        if (animated == true) {
 //            let congrats = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Congrats") as UIViewController
