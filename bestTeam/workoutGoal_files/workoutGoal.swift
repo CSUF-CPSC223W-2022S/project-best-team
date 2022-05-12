@@ -37,9 +37,8 @@ class workoutGoal {
     var legs : [String] = ["Calves", "Legs", "Hamstrings", "Quadriceps"]
     
     var workoutIntro : String = "Workouts you should do:"
-    var trapeziusSchedule : String = "Barrel Shrug, Dumbell One Arm Row, Rack Pull, Face Pull, Dumbbell Prone Press"
-   
-    
+    //var trapeziusSchedule : [String : Int] = ["Barrel Shrug": 1, "Dumbell One Arm Row": 2, "Rack Pull": 2, "Face Pull": 3, ]
+       
     var bicepsSchedule : String = ""
     var tricpesSchedule : String = ""
     var forearmsSchedule : String = ""
@@ -48,6 +47,9 @@ class workoutGoal {
     var latsDorsiSchedule : String = ""
     var abdominalsSchedule : String = ""
     var legssSchedule : String = ""
+    
+    // intensity will range from 3-1
+    var intensity : Int
     
     init() {
         focusedMuscle = " "
@@ -58,8 +60,7 @@ class workoutGoal {
         back = []
         abdominals = []
         legs = []
-        
-        
+        intensity = 0
     }
 
         //
@@ -67,24 +68,61 @@ class workoutGoal {
             
         if specificMuscle == shoulder[0] {
         
-            return workoutIntro + trapeziusSchedule
+            return workoutIntro
         }
             else if specificMuscle == arms[0]{
-                return "Workout"
+                intensity = 3
+                return workoutIntro
             }
             else if specificMuscle == arms[1] {
-                return "Workout"
+                intensity = 2
+                return workoutIntro
             }
             else if specificMuscle == arms[2] {
-                return "Workout"
+                intensity = 2
+                return workoutIntro
             }
             else if specificMuscle == arms[3] {
-                return "Workout"
+                intensity = 2
+                return workoutIntro
             }
-            else if {
-                return "Error"
+            else if specificMuscle == chest[0] {
+                intensity = 2
+                return workoutIntro
             }
+            else if specificMuscle == back[0] {
+                intensity = 2
+                return workoutIntro
+            }
+            else if specificMuscle == back[1] {
+                intensity = 2
+                return workoutIntro
+            }
+            else if specificMuscle == abdominals[0] {
+                intensity = 2
+                return workoutIntro
+            }
+            else if specificMuscle == legs[0] {
+                intensity = 2
+                return workoutIntro
+            }
+            else if specificMuscle == legs[1] {
+                intensity = 2
+                return workoutIntro
+            }
+            else if specificMuscle == legs[2] {
+                intensity = 2
+                return workoutIntro
+            }
+            else if specificMuscle == legs[3] {
+                return workoutIntro
+            }
+            else {
+                return "Error contact developer"
+             }
+          
         }
+        
         
 }
     

@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="5nl-cK-u90">
             <objects>
-                <viewController id="33R-1H-STp" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="33R-1H-STp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C9m-fq-DWa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,6 +36,7 @@
                         <viewLayoutGuide key="safeArea" id="0fc-MR-cJR"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="43j-wu-ORz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qG-LY-3Wy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,7 +45,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +184,15 @@
                                     <segue destination="RJZ-zV-hvj" kind="show" id="DRE-RS-Nya"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Xa-YO-lzG">
+                                <rect key="frame" x="327" y="44" width="68" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="&lt; back"/>
+                                <connections>
+                                    <segue destination="33R-1H-STp" kind="show" id="aQe-W7-m70"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.62733961575309449" green="0.94311970070338524" blue="0.96841138601303101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -216,13 +226,6 @@
                                 <rect key="frame" x="81" y="176" width="253" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trapezious (Traps)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBF-nW-YhT">
-                                <rect key="frame" x="140" y="438" width="143" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjL-LG-beg">
                                 <rect key="frame" x="81" y="157" width="253" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -230,6 +233,22 @@
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
                                     <action selector="traps_button:" destination="rjT-NG-2Ot" eventType="touchUpInside" id="SU1-50-saQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trapezious (Traps)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBF-nW-YhT">
+                                <rect key="frame" x="140" y="438" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0M-55-d0H">
+                                <rect key="frame" x="20" y="44" width="68" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="&lt; back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="z0x-Ta-Mgl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -309,6 +328,15 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACq-DN-lIu">
+                                <rect key="frame" x="14" y="44" width="68" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="&lt; back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ld7-QX-z3k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ccV-oL-ds3"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -368,6 +396,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfI-P3-ba5">
+                                <rect key="frame" x="14" y="44" width="68" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="&lt; back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="l1a-xD-NAN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gvY-aK-vfm"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -452,6 +489,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyK-am-0jF">
+                                <rect key="frame" x="14" y="44" width="68" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="&lt; back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="r27-el-HiX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Iw-Ng-YNM"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -494,6 +540,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qb0-vZ-95a">
+                                <rect key="frame" x="14" y="44" width="68" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="&lt; back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="V9v-eY-QSm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VRB-d7-Zsu"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
@@ -587,6 +642,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jab-SM-t5A">
+                                <rect key="frame" x="15" y="44" width="68" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="&lt; back"/>
+                                <connections>
+                                    <segue destination="33R-1H-STp" kind="show" id="zwW-lo-2Cq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y7k-4S-p73"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -598,6 +662,11 @@
             <point key="canvasLocation" x="-2568.1159420289855" y="1988.8392857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="m45-MT-jdW"/>
+        <segue reference="V9v-eY-QSm"/>
+        <segue reference="aQe-W7-m70"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="abdominals_icon" width="800" height="800"/>
         <image name="arms_icon" width="1000" height="1080"/>
