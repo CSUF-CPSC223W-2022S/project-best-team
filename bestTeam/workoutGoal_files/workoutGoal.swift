@@ -46,7 +46,6 @@ class workoutGoal {
     var latsDorsiSchedule : String = ""
     var abdominalsSchedule : String = ""
     var legssSchedule : String = ""
-    
     // intensity will range from 3-1
     var intensity : Int
     
