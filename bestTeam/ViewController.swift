@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //    @IBOutlet weak var kilogramstxt: UITextField!
 //    //BMI outlets - math
     
-    //workouts outlets
+    //workout outlets
     @IBOutlet weak var SundayWrk: UILabel!
     @IBOutlet weak var MondayWrk: UILabel!
     @IBOutlet weak var TuesdayWrk: UILabel!
@@ -62,6 +62,7 @@ class ViewController: UIViewController {
     @IBAction func Sunday(_ sender: Any) {
         tracker.nextDay()
         SundayComp.selectedSegmentIndex = tracker.trackComp[0]
+        //let sundayPrint = *your function*
         print(tracker.trackComp)
     }
     
@@ -69,6 +70,7 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             MondayComp.selectedSegmentIndex = (baseController.tracker.trackComp[1])
+            //let mondayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -77,6 +79,7 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             TuesdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[2])
+            //let tuesdayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -85,6 +88,7 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             WednesdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[3])
+            //let wednesdayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -93,7 +97,7 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             ThursdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[4])
-
+            //let thursdayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -102,6 +106,7 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             FridayComp.selectedSegmentIndex = (baseController.tracker.trackComp[5])
+            //let fridayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -113,19 +118,40 @@ class ViewController: UIViewController {
             let Storyboard  = UIStoryboard(name: "Main", bundle: nil)
             let vc = Storyboard.instantiateViewController(withIdentifier: "Congrats")
             present(vc , animated: tracker.checkArray(array: baseController.tracker.trackComp), completion: nil)
+            //let saturdayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
     
-    @IBAction func workoutsPrint(_ sender: Any) {
-  //     self.SundayWrk.text = "bruh"
-//        MondayWrk.text = ""
-//        TuesdayWrk.text = ""
-//        WednesdayWrk.text = ""
-//        ThursdayWrk.text = ""
-//        FridayWrk.text = ""
-//        SaturdayWrk.text = ""
+    //outlets to show text
+    @IBAction func showwrkSun(_ sender: Any) {
+        SundayWrk.text = "Sunday" //replace with sundayPrint
     }
+    
+    @IBAction func showwrkMon(_ sender: Any) {
+        MondayWrk.text = "Monday" // replace with mondayPrint
+    }
+    
+    @IBAction func showwrkTues(_ sender: Any) {
+        TuesdayWrk.text = "Tuesday" // replace with tuesdayPrint
+    }
+    
+    @IBAction func showwrkWed(_ sender: Any) {
+        WednesdayWrk.text = "Wednesday" // replace with wednesdayPrint
+    }
+    
+    @IBAction func showwrkThurs(_ sender: Any) {
+        ThursdayWrk.text = "Thursday" //replace with thursdayPrint
+    }
+    
+    @IBAction func showwrkFri(_ sender: Any) {
+        FridayWrk.text = "Friday" //replace with fridayPrint
+    }
+    
+    @IBAction func showworkSat(_ sender: Any) {
+        SaturdayWrk.text = "Saturday" //replace with saturdayPrint
+    }
+    
     //    override func viewWillAppear(_ animated: Bool) {
 //
 //        if (animated == true) {
