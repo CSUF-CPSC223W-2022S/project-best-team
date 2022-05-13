@@ -18,45 +18,52 @@ class ViewController: UIViewController {
     
     
     @IBAction func shoulder_button(_ sender: Any) {
-        workoutGoal().focusedMuscle = workoutGoal().Muscle1
+        workoutGoal().focusedMuscle = "Shoulder"
+        workoutGoal().generateWorkout2(focusedMuscle: workoutGoal().focusedMuscle)
+        
         
         
     }
     
     @IBAction func arms_button(_ sender: Any) {
-        workoutGoal().focusedMuscle = workoutGoal().Muscle2
+        workoutGoal().focusedMuscle = "Arms"
+        workoutGoal().generateWorkout2(focusedMuscle: workoutGoal().focusedMuscle)
         
         
     }
     
     @IBAction func chest_button(_ sender: Any) {
-        workoutGoal().focusedMuscle = workoutGoal().Muscle3
+        workoutGoal().focusedMuscle = "Chest"
+        workoutGoal().generateWorkout2(focusedMuscle: workoutGoal().focusedMuscle)
         
         
     }
     
     @IBAction func back_button(_ sender: Any) {
-        workoutGoal().focusedMuscle = workoutGoal().Muscle4
+        workoutGoal().focusedMuscle = "Back"
+        workoutGoal().generateWorkout2(focusedMuscle: workoutGoal().focusedMuscle)
        
         
     }
     
     @IBAction func abdominals_button(_ sender: Any) {
-        workoutGoal().focusedMuscle = workoutGoal().Muscle5
+        workoutGoal().focusedMuscle = "Abdominals"
+        workoutGoal().generateWorkout2(focusedMuscle: workoutGoal().focusedMuscle)
         
         
     }
     
     @IBAction func legs_button(_ sender: Any) {
-        workoutGoal().focusedMuscle = workoutGoal().Muscle6
+        workoutGoal().focusedMuscle = "Legs"
+        workoutGoal().generateWorkout2(focusedMuscle: workoutGoal().focusedMuscle)
        
         
     }
     
-    @IBAction func traps_button(_ sender: Any) {
-        workoutGoal().specificMuscle = workoutGoal().shoulder[0]
-        workoutGoal().generateWorkout2(specificMuscle: workoutGoal().specificMuscle)
-        
-    }
+//    @IBAction func traps_button(_ sender: Any) {
+//        workoutGoal().specificMuscle = workoutGoal().shoulder[0]
+//        workoutGoal().generateWorkout2(specificMuscle: workoutGoal().specificMuscle)
+//
+//    }
 }
 

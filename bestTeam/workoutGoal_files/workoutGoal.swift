@@ -36,16 +36,16 @@ class workoutGoal {
     var abdominals : [String] = ["Abdominals"]
     var legs : [String] = ["Calves", "Legs", "Hamstrings", "Quadriceps"]
     
-    var workoutIntro : String = "Workouts you should do:"
-    var trapeziusSchedule : [String : Int] = ["Barrel Shrug": 1, "Dumbell One Arm Row": 2, "Rack Pull": 2, "Face Pull": 3, ]
-    var bicepsSchedule : String = ""
-    var tricpesSchedule : String = ""
-    var forearmsSchedule : String = ""
-    var chestSchedule : String = ""
-    var glutesSchedule : String = ""
-    var latsDorsiSchedule : String = ""
+    var workoutIntro : String = "Workouts you should do today:"
+    var Shoulder1Schedule : String = "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull"
+    var Shoulder2Schedule : String = "Chin-Ups, Hammer Curls, Incline Dumbell Curl, Cable Curl, High Cable Curl"
+    var Shoulder3Schedule : String = "Bench Dips, Push Ups, Skull Crushers, Trciep Rope Push Down, Press Machine"
+    var Shoulder4Schedule : String = " Dumbell Wrist Extension, Recerse Curl, Hammer Curl, Pull Up Bar"
+    var Shoulder5chestSchedule : String = "Barrel Shrug, Dumbell One Arm Row, Rack Pull, Face Pull"
+    var Shoulder6Schedule : String = "Incline Push Ups, Flat Bench Press, Incline Bench Press, Decline Bench Press, Pushups"
+    var Shoulder7Schedule : String = "Chin-Ups, Hammer Curls, Incline Dumbell Curl, Cable Curl, High Cable Curl"
     var abdominalsSchedule : String = ""
-    var legssSchedule : String = ""
+    var legsSchedule : String = ""
     // intensity will range from 3-1
     var intensity : Int
     
@@ -61,11 +61,11 @@ class workoutGoal {
         intensity = 0
     }
     
-    func generateWorkout2 (specificMuscle: String) -> String { //
+    func generateWorkout2 (focusedMuscle: String) -> String { //
             
-        if specificMuscle == shoulder[0] {
+        if focusedMuscle == "Shoulder" {
         
-            return workoutIntro
+            return workoutIntro +
         }
             else if specificMuscle == arms[0]{
                 intensity = 3
