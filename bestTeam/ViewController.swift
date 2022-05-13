@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.MondayWrk.text = tracker.bmu
         // Do any additional setup after loading the view.
     }
     
@@ -117,7 +118,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func workoutsPrint(_ sender: Any) {
-//        SundayWrk.text = ""
+  //     self.SundayWrk.text = "bruh"
 //        MondayWrk.text = ""
 //        TuesdayWrk.text = ""
 //        WednesdayWrk.text = ""
@@ -147,4 +148,21 @@ class ViewController: UIViewController {
 //    }
 
 }
+
+//override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Checks whether the segue leads to an AddVolunteerViewController
+//        if let addVolunteer = segue.destination as? AddVolunteerViewController {
+//            /* Create a reference form this class' volunteertracker to the AddViewController's
+//               volunteerTracker property.
+//             */
+//            addVolunteer.volunteerTracker = volunteerTracker
+//        } // Checks whether the segue leads to a ViewVolunteersViewController
+//          else if let viewVolunteer = segue.destination as? ViewVolunteersViewController {
+//            /* Create a reference form this class' volunteertracker to the ViewVolunteersViewController's
+//               volunteerTracker property.
+//             */
+//            viewVolunteer.volunteerTracker = volunteerTracker
+//        }
+//    }
+
 
