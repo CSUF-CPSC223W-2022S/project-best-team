@@ -48,7 +48,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGn-uJ-zX4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="3wc-qX-NVH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2230.434782608696" y="-625.44642857142856"/>
+            <point key="canvasLocation" x="2322" y="-693"/>
         </scene>
         <!--Sun-->
         <scene sceneID="tne-QT-ifu">
@@ -62,7 +62,7 @@
                                 <rect key="frame" x="77" y="232" width="260" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Workout">
+                                    <fragment content="...">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
@@ -93,7 +93,7 @@
                                     <segment title="Completed"/>
                                 </segments>
                                 <connections>
-                                    <action selector="Sunday:" destination="BYZ-38-t0r" eventType="valueChanged" id="zin-bV-Qhz"/>
+                                    <action selector="Sunday:" destination="BYZ-38-t0r" eventType="valueChanged" id="yQ0-C9-QFM"/>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugt-7O-Y1y">
@@ -105,6 +105,15 @@
                                     <segue destination="GVg-LY-00L" kind="show" id="WXF-2J-MJd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuQ-Ur-SbH">
+                                <rect key="frame" x="63" y="179" width="288" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click here to Show Workout"/>
+                                <connections>
+                                    <action selector="showwrkSun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CqE-D1-YsN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96397414996894315" green="0.96841138599999999" blue="0.51522327866802098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -112,8 +121,8 @@
                     <tabBarItem key="tabBarItem" title="Sun" id="fB1-Ft-QVD"/>
                     <navigationItem key="navigationItem" id="Drb-rs-Cnf"/>
                     <connections>
-                        <outlet property="SundayComp" destination="fEo-Md-1LY" id="19t-1F-0VM"/>
-                        <outlet property="SundayWrk" destination="XFh-O5-afr" id="MTo-3f-njP"/>
+                        <outlet property="SundayComp" destination="fEo-Md-1LY" id="wb4-Zv-bSq"/>
+                        <outlet property="SundayWrk" destination="XFh-O5-afr" id="pzU-Jf-JbX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,7 +141,7 @@
                                 <rect key="frame" x="77" y="232" width="260" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Workout">
+                                    <fragment content="...">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
@@ -150,7 +159,7 @@
                                     <segment title="Completed"/>
                                 </segments>
                                 <connections>
-                                    <action selector="Monday:" destination="uBS-U2-HlN" eventType="valueChanged" id="GnY-Bc-TeW"/>
+                                    <action selector="Monday:" destination="uBS-U2-HlN" eventType="valueChanged" id="P4I-zw-piV"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKZ-Uc-fWm">
@@ -176,6 +185,16 @@
                                     <segue destination="GVg-LY-00L" kind="show" id="6UU-2r-pS4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wid-sR-O4b">
+                                <rect key="frame" x="63" y="167" width="288" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click here to Show Workout"/>
+                                <connections>
+                                    <action selector="showwrkMon:" destination="uBS-U2-HlN" eventType="touchUpInside" id="RNx-So-Dq9"/>
+                                    <action selector="showwrkSun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcp-9a-tsM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MN8-H9-KwF"/>
                         <color key="backgroundColor" red="0.94328004121780396" green="0.80946122152880728" blue="0.40902549617242501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -183,8 +202,8 @@
                     <tabBarItem key="tabBarItem" title="Mon" id="DB8-nF-iZ1"/>
                     <navigationItem key="navigationItem" id="MY1-h8-7Qk"/>
                     <connections>
-                        <outlet property="MondayComp" destination="tGb-lm-He6" id="qVg-H3-jbC"/>
-                        <outlet property="MondayWrk" destination="HIP-U0-NFV" id="tdZ-bB-bgN"/>
+                        <outlet property="MondayComp" destination="tGb-lm-He6" id="FrP-aS-JcL"/>
+                        <outlet property="MondayWrk" destination="HIP-U0-NFV" id="Vts-QL-YrF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7RK-Z6-VXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -203,7 +222,7 @@
                                 <rect key="frame" x="77" y="232" width="260" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Workout">
+                                    <fragment content="...">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
@@ -221,7 +240,7 @@
                                     <segment title="Completed"/>
                                 </segments>
                                 <connections>
-                                    <action selector="Tuesday:" destination="Gpc-eT-Fzb" eventType="valueChanged" id="E3l-aQ-kEH"/>
+                                    <action selector="Tuesday:" destination="Gpc-eT-Fzb" eventType="valueChanged" id="gRq-Rw-1fF"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srs-ff-Ozp">
@@ -247,6 +266,16 @@
                                     <segue destination="GVg-LY-00L" kind="show" id="u4M-it-Spf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3r-MP-GeK">
+                                <rect key="frame" x="63" y="181" width="288" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click here to Show Workout"/>
+                                <connections>
+                                    <action selector="showwrkSun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JYj-Zh-9kL"/>
+                                    <action selector="showwrkTues:" destination="Gpc-eT-Fzb" eventType="touchUpInside" id="BNA-7S-Fsg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ng4-Mx-apS"/>
                         <color key="backgroundColor" red="0.49298457483518598" green="0.77171584072801258" blue="0.75039843113691085" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -254,8 +283,8 @@
                     <tabBarItem key="tabBarItem" title="Tues" id="N8f-Pj-9i4"/>
                     <navigationItem key="navigationItem" id="bQf-c7-ZHF"/>
                     <connections>
-                        <outlet property="TuesdayComp" destination="avj-eY-qW6" id="9tg-y0-srP"/>
-                        <outlet property="TuesdayWrk" destination="FZz-kv-f9v" id="yYH-RP-epx"/>
+                        <outlet property="TuesdayComp" destination="avj-eY-qW6" id="JNE-cj-Lyf"/>
+                        <outlet property="TuesdayWrk" destination="FZz-kv-f9v" id="Ov5-qR-HxE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9pr-af-nDy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -309,7 +338,7 @@
                                 <rect key="frame" x="77" y="232" width="260" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Workout">
+                                    <fragment content="...">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
@@ -327,7 +356,7 @@
                                     <segment title="Completed"/>
                                 </segments>
                                 <connections>
-                                    <action selector="Wednesday:" destination="Lee-fw-AxO" eventType="valueChanged" id="XFH-nO-FfS"/>
+                                    <action selector="Wednesday:" destination="Lee-fw-AxO" eventType="valueChanged" id="OYR-VX-Wh7"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMs-8D-GWF">
@@ -353,6 +382,16 @@
                                     <segue destination="GVg-LY-00L" kind="show" id="gag-Zk-Qpj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TM-cl-VAE">
+                                <rect key="frame" x="63" y="181" width="288" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click here to Show Workout"/>
+                                <connections>
+                                    <action selector="showwrkSun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q6y-QS-wxZ"/>
+                                    <action selector="showwrkWed:" destination="Lee-fw-AxO" eventType="touchUpInside" id="hr1-Ts-Wf1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4I3-LR-LdP"/>
                         <color key="backgroundColor" red="0.45656143369398849" green="0.76942896842956543" blue="0.51918586809280165" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -361,8 +400,8 @@
                     <navigationItem key="navigationItem" id="cL3-jf-REl"/>
                     <connections>
                         <outlet property="TuesdayComp" destination="wd8-Bp-2tL" id="hYU-cy-0n5"/>
-                        <outlet property="WednesdayComp" destination="wd8-Bp-2tL" id="F0G-zd-icR"/>
-                        <outlet property="WednesdayWrk" destination="7Rw-5a-0OD" id="Vmt-bP-ast"/>
+                        <outlet property="WednesdayComp" destination="wd8-Bp-2tL" id="kTe-Qi-LrD"/>
+                        <outlet property="WednesdayWrk" destination="7Rw-5a-0OD" id="ytg-Fv-Phm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APD-a8-aVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -381,7 +420,7 @@
                                 <rect key="frame" x="77" y="232" width="260" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Workout">
+                                    <fragment content="...">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
@@ -399,7 +438,7 @@
                                     <segment title="Completed"/>
                                 </segments>
                                 <connections>
-                                    <action selector="Thursday:" destination="Vl4-1w-usk" eventType="valueChanged" id="8mR-gk-8CX"/>
+                                    <action selector="Thursday:" destination="Vl4-1w-usk" eventType="valueChanged" id="dj1-ry-5cA"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zw4-mK-au3">
@@ -425,6 +464,16 @@
                                     <segue destination="GVg-LY-00L" kind="show" id="Cx2-FX-mZp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Y0-KE-cZf">
+                                <rect key="frame" x="63" y="193" width="288" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click here to Show Workout"/>
+                                <connections>
+                                    <action selector="showwrkSun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yI4-ar-Lpy"/>
+                                    <action selector="showwrkThurs:" destination="Vl4-1w-usk" eventType="touchUpInside" id="RWo-9Z-Mvp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nku-4R-PgN"/>
                         <color key="backgroundColor" red="0.92128556966781616" green="0.48902691579957785" blue="0.48109589013024628" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -432,8 +481,8 @@
                     <tabBarItem key="tabBarItem" title="Thurs" id="v1P-Mp-Fds"/>
                     <navigationItem key="navigationItem" id="80j-9L-oKo"/>
                     <connections>
-                        <outlet property="ThursdayComp" destination="4MV-sb-8L9" id="06I-3h-g72"/>
-                        <outlet property="ThursdayWrk" destination="m4J-88-Vxx" id="Vv5-1R-XYL"/>
+                        <outlet property="ThursdayComp" destination="4MV-sb-8L9" id="7wK-5Z-uYU"/>
+                        <outlet property="ThursdayWrk" destination="m4J-88-Vxx" id="oI6-QX-xVo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyZ-iH-uN5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -449,10 +498,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMt-GY-C4D">
-                                <rect key="frame" x="77" y="232" width="260" height="433"/>
+                                <rect key="frame" x="77" y="232" width="18" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Workout">
+                                    <fragment content="...">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
@@ -496,6 +545,16 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DR5-Vt-Yqa">
+                                <rect key="frame" x="63" y="193" width="288" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click here to Show Workout"/>
+                                <connections>
+                                    <action selector="showwrkFri:" destination="mIm-5Q-m84" eventType="touchUpInside" id="hkv-26-IAy"/>
+                                    <action selector="showwrkSun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qQT-Gb-3zW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bHo-q7-yJp"/>
                         <color key="backgroundColor" red="0.76920230049831995" green="0.61818585671657633" blue="0.84258943796157837" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -504,7 +563,7 @@
                     <navigationItem key="navigationItem" id="gl4-fp-1x4"/>
                     <connections>
                         <outlet property="FridayComp" destination="46l-Qh-Rcu" id="eES-j8-jHf"/>
-                        <outlet property="FridayWrk" destination="fMt-GY-C4D" id="WbD-Al-g0d"/>
+                        <outlet property="FridayWrk" destination="fMt-GY-C4D" id="cNS-qs-P1e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bn8-AY-vlA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -523,7 +582,7 @@
                                 <rect key="frame" x="77" y="232" width="260" height="433"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Workout">
+                                    <fragment content="...">
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <font key="NSFont" size="24" name="TimesNewRomanPSMT"/>
@@ -566,6 +625,15 @@
                                     <segue destination="GVg-LY-00L" kind="show" id="pOm-Mh-bQO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDv-fl-Ujy">
+                                <rect key="frame" x="106" y="181" width="203" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click here to Show Workout"/>
+                                <connections>
+                                    <action selector="showworkSat:" destination="tEY-eD-cOk" eventType="touchUpInside" id="0pO-ch-GZf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jcl-eT-Hhd"/>
                         <color key="backgroundColor" red="0.91976243260000001" green="0.68579659427414952" blue="0.80416891111522948" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -574,7 +642,7 @@
                     <navigationItem key="navigationItem" id="1Ng-Pz-fnZ"/>
                     <connections>
                         <outlet property="SaturdayComp" destination="fHv-tp-XKa" id="D7F-57-xJU"/>
-                        <outlet property="SaturdayWrk" destination="d2U-wo-05w" id="iM3-E0-Mhp"/>
+                        <outlet property="SaturdayWrk" destination="d2U-wo-05w" id="n0S-9J-4d3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dSP-pq-uWn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -636,26 +704,16 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VV4-94-Ejt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2233.3333333333335" y="50.892857142857139"/>
+            <point key="canvasLocation" x="2322" y="51"/>
         </scene>
-        <!--View Controller-->
+        <!--BMI-->
         <scene sceneID="C4P-9H-5v1">
             <objects>
-                <viewController id="go4-pU-cej" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="go4-pU-cej" customClass="ViewController" customModule="bestTeam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yUF-Zn-d8x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KT4-2q-hUr">
-                                <rect key="frame" x="122" y="755" width="170" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Click Here to Continue"/>
-                                <connections>
-                                    <action selector="workoutsPrint:" destination="go4-pU-cej" eventType="touchUpInside" id="vnv-9A-KwP"/>
-                                    <segue destination="sEz-Jz-Nec" kind="show" id="MEV-Dj-DV4"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csO-Vk-hkR">
                                 <rect key="frame" x="159" y="250" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -784,19 +842,30 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KT4-2q-hUr">
+                                <rect key="frame" x="122" y="693" width="170" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here to Continue"/>
+                                <connections>
+                                    <segue destination="sEz-Jz-Nec" kind="show" id="0fh-99-uA7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tC3-MX-Wdv"/>
                         <color key="backgroundColor" red="0.74448797619999996" green="0.89686239850000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="BMI" id="c70-C9-DxJ"/>
+                    <navigationItem key="navigationItem" id="FWO-S0-QmK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axH-nc-M43" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1381" y="51"/>
+            <point key="canvasLocation" x="1436" y="51"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MEV-Dj-DV4"/>
-        <segue reference="WXF-2J-MJd"/>
+        <segue reference="0fh-99-uA7"/>
+        <segue reference="pOm-Mh-bQO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
