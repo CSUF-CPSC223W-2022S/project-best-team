@@ -25,6 +25,8 @@
 		A53B55652823582D003B76F8 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B55642823582D003B76F8 /* AnnotationView.swift */; };
 		A5EA434A280234B6003AD0A4 /* factTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EA4349280234B6003AD0A4 /* factTests.swift */; };
 		A5EA434C2802350E003AD0A4 /* randomFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EA434B2802350E003AD0A4 /* randomFacts.swift */; };
+		B4530A0E282E1C8700FD102C /* workoutGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4530A0D282E1C8700FD102C /* workoutGoal.swift */; };
+		B4530A12282E1D2F00FD102C /* workoutGoalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4530A11282E1D2F00FD102C /* workoutGoalTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		A53B55642823582D003B76F8 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		A5EA4349280234B6003AD0A4 /* factTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = factTests.swift; sourceTree = "<group>"; };
 		A5EA434B2802350E003AD0A4 /* randomFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomFacts.swift; sourceTree = "<group>"; };
+		B4530A0D282E1C8700FD102C /* workoutGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workoutGoal.swift; sourceTree = "<group>"; };
+		B4530A11282E1D2F00FD102C /* workoutGoalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workoutGoalTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		7AC2101127E38B81008549BA = {
 			isa = PBXGroup;
 			children = (
+				B4530A0C282E1C4700FD102C /* workoutGoal */,
 				7AC2104D27E38C2E008549BA /* .gitignore */,
 				7AC2101C27E38B82008549BA /* bestTeam */,
 				7AC2103327E38B84008549BA /* bestTeamTests */,
@@ -152,6 +157,15 @@
 				A53B55642823582D003B76F8 /* AnnotationView.swift */,
 			);
 			path = map;
+			sourceTree = "<group>";
+		};
+		B4530A0C282E1C4700FD102C /* workoutGoal */ = {
+			isa = PBXGroup;
+			children = (
+				B4530A0D282E1C8700FD102C /* workoutGoal.swift */,
+				B4530A11282E1D2F00FD102C /* workoutGoalTests.swift */,
+			);
+			path = workoutGoal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +276,7 @@
 				7A4C6AEF27F4CF4400207C42 /* Tracker.swift in Sources */,
 				A53B55652823582D003B76F8 /* AnnotationView.swift in Sources */,
 				7AC2101E27E38B82008549BA /* AppDelegate.swift in Sources */,
+				B4530A0E282E1C8700FD102C /* workoutGoal.swift in Sources */,
 				7A17D41E282B1B8B00CD2EB0 /* MetricBMI.swift in Sources */,
 				7A17D421282B1C0900CD2EB0 /* StandardBMI.swift in Sources */,
 				A5EA434C2802350E003AD0A4 /* randomFacts.swift in Sources */,
@@ -276,6 +291,7 @@
 			files = (
 				7A4C6AF127F4CFA100207C42 /* TrackerTests.swift in Sources */,
 				7AC2103527E38B84008549BA /* bestTeamTests.swift in Sources */,
+				B4530A12282E1D2F00FD102C /* workoutGoalTests.swift in Sources */,
 				A5EA434A280234B6003AD0A4 /* factTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
