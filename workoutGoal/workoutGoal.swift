@@ -63,27 +63,29 @@ class workoutGoal {
     }
     
     func generateWorkout (day : Int) -> String {
+        var day0 = ""
+        var day1 = ""
+        var day2 = ""
+        var day3 = ""
+        var day4 = ""
+        var day5 = ""
+        var day6 = ""
         if focusedMuscle == "Shoulder" {
-            for index in ShoulderOrder {
-                    if index == day {
-                        if index == 0 {
-                            return workoutIntro + workoutSchedule1
-                        } else if index == 1 {
-                            return workoutIntro + workoutSchedule3
-                        } else if index == 2 {
-                            return workoutIntro + workoutSchedule5
-                        } else if index == 3 {
-                            return workoutIntro + workoutSchedule4
-                        } else if index == 4 {
-                            return workoutIntro + workoutSchedule1
-                        } else if index == 5 {
-                            return workoutIntro + workoutSchedule2
-                        } else if index == 6 {
-                            return workoutIntro + workoutSchedule5
+                            day0 = workoutIntro + workoutSchedule1
+                        
+                            day1 = workoutIntro + workoutSchedule3
+                       
+                            day2 = workoutIntro + workoutSchedule5
+                        
+                            day3 = workoutIntro + workoutSchedule4
+                        
+                            day4 = workoutIntro + workoutSchedule1
+                        
+                            day5 = workoutIntro + workoutSchedule2
+                        
+                            day6 = workoutIntro + workoutSchedule5
                         }
-                    }
-            }
-        }
+                    
       else if focusedMuscle == "Arms" {
         for index in ShoulderOrder {
                 if index == day {
