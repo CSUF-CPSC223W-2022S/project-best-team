@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.MondayWrk.text = tracker.bmu
+        
         // Do any additional setup after loading the view.
     }
     
@@ -57,12 +57,12 @@ class ViewController: UIViewController {
     
     //Tracker
     let tracker = Tracker()
+    var muscle = workoutGoal(muscle: "")
     
     //segmented control actions
     @IBAction func Sunday(_ sender: Any) {
         tracker.nextDay()
         SundayComp.selectedSegmentIndex = tracker.trackComp[0]
-        //let sundayPrint = *your function*
         print(tracker.trackComp)
     }
     
@@ -70,7 +70,6 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             MondayComp.selectedSegmentIndex = (baseController.tracker.trackComp[1])
-            //let mondayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -79,7 +78,6 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             TuesdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[2])
-            //let tuesdayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -88,7 +86,6 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             WednesdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[3])
-            //let wednesdayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -97,7 +94,6 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             ThursdayComp.selectedSegmentIndex = (baseController.tracker.trackComp[4])
-            //let thursdayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -106,7 +102,6 @@ class ViewController: UIViewController {
         if let baseController = self.tabBarController!.viewControllers?[0] as? ViewController {
             baseController.tracker.nextDay()
             FridayComp.selectedSegmentIndex = (baseController.tracker.trackComp[5])
-            //let fridayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
@@ -118,39 +113,64 @@ class ViewController: UIViewController {
             let Storyboard  = UIStoryboard(name: "Main", bundle: nil)
             let vc = Storyboard.instantiateViewController(withIdentifier: "Congrats")
             present(vc , animated: tracker.checkArray(array: baseController.tracker.trackComp), completion: nil)
-            //let saturdayPrint = *your function*
             print(baseController.tracker.trackComp)
         }
     }
     
     //outlets to show text
     @IBAction func showwrkSun(_ sender: Any) {
-        SundayWrk.text = "Sunday" //replace with sundayPrint
+        SundayWrk.text = muscle.generateWorkout(day: 0) //replace with sundayPrint
     }
     
     @IBAction func showwrkMon(_ sender: Any) {
-        MondayWrk.text = "Monday" // replace with mondayPrint
+        MondayWrk.text = muscle.generateWorkout(day: 1) // replace with mondayPrint
     }
     
     @IBAction func showwrkTues(_ sender: Any) {
-        TuesdayWrk.text = "Tuesday" // replace with tuesdayPrint
+        TuesdayWrk.text = muscle.generateWorkout(day: 2) // replace with tuesdayPrint
     }
     
     @IBAction func showwrkWed(_ sender: Any) {
-        WednesdayWrk.text = "Wednesday" // replace with wednesdayPrint
+        WednesdayWrk.text = muscle.generateWorkout(day: 3) // replace with wednesdayPrint
     }
     
     @IBAction func showwrkThurs(_ sender: Any) {
-        ThursdayWrk.text = "Thursday" //replace with thursdayPrint
+        ThursdayWrk.text = muscle.generateWorkout(day: 4) //replace with thursdayPrint
     }
     
     @IBAction func showwrkFri(_ sender: Any) {
-        FridayWrk.text = "Friday" //replace with fridayPrint
+        FridayWrk.text = muscle.generateWorkout(day:5) //replace with fridayPrint
     }
     
     @IBAction func showworkSat(_ sender: Any) {
-        SaturdayWrk.text = "Saturday" //replace with saturdayPrint
+        SaturdayWrk.text = muscle.generateWorkout(day: 6) //replace with saturdayPrint
     }
+    
+    
+    @IBAction func shoulder_button(_ sender: Any) {
+        muscle = workoutGoal(muscle: "Shoulder")
+    }
+    @IBAction func arms_button(_ sender: Any) {
+        muscle = workoutGoal(muscle: "Arms")
+    }
+    
+    @IBAction func chest_button(_ sender: Any) {
+        muscle = workoutGoal(muscle: "Chest")
+    }
+    
+    @IBAction func back_button(_ sender: Any) {
+        muscle = workoutGoal(muscle: "Back")
+    }
+    
+    @IBAction func abdominals_button(_ sender: Any) {
+        muscle = workoutGoal(muscle: "Abdominals")
+    }
+    
+    @IBAction func legs_button(_ sender: Any) {
+        muscle = workoutGoal(muscle: "Legs")
+    }
+    
+    
     
     //    override func viewWillAppear(_ animated: Bool) {
 //

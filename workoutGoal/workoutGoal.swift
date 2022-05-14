@@ -19,7 +19,7 @@ import Foundation
 
 class workoutGoal {
     var focusedMuscle: String
-    var specificMuscle: String
+    
     // Focused Muscles
     var Muscle1 : String = "Shoulder"
     var Muscle2 : String = "Arms"
@@ -40,45 +40,31 @@ class workoutGoal {
     var workoutIntro : String = "Workouts you should do today:"
     // Workout Schedules
     var workoutSchedule0 : String = "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull "
-    var workoutSchedule1 : String = " "
-    var workoutSchedule2 : String = " "
-    var workoutSchedule3 : String = " "
-    var workoutSchedule4 : String = " "
-    var workoutSchedule5 : String = " "
+    var workoutSchedule1 : String = "3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl"
+    var workoutSchedule2 : String = "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine "
+    var workoutSchedule3 : String = "3 x 10 Dumbell Wrist Extension, 6 x 5 Recerse Curl, 2 x 15 Hammer Curl, 4 x 10 Pull Up Bar"
+    var workoutSchedule4 : String = "2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press "
+    var workoutSchedule5 : String = "2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull "
     
     
     var ShoulderOrder : [Int] = [1, 3, 5, 4, 1, 2, 5]
-    var ArmsOrder : [Int] = [2, 3, 5, 4, 1, 2, 4]
-    var ChestOrder : [Int] = [4, 3, 1, 2, 4, 2, 7]
-    var BackOrder : [Int] = [1, 3, 7, 4, 1, 2, 5]
-    var AbdominalsOrder : [Int] = [1, 3, 7, 4, 1, 2, 5]
-    var LegsOrder : [Int] = [1, 3, 7, 4, 1, 2, 5]
-    
-    
-    var ShoulderSchedule1 : String = "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull"
-    var ShoulderSchedule2 : String = "Chin-Ups, Hammer Curls, Incline Dumbell Curl, Cable Curl, High Cable Curl"
-    var ShoulderSchedule3 : String = "Bench Dips, Push Ups, Skull Crushers, Trciep Rope Push Down, Press Machine"
-    var ShoulderSchedule4 : String = "Dumbell Wrist Extension, Recerse Curl, Hammer Curl, Pull Up Bar"
-    var ShoulderSchedule5 : String = "Barrel Shrug, Dumbell One Arm Row, Rack Pull, Face Pull"
-    var ShoulderSchedule6 : String = "Incline Push Ups, Flat Bench Press, Incline Bench Press, Decline Bench Press"
-    var ShoulderSchedule7 : String = "Chin-Ups, Hammer Curls, Incline Dumbell Curl, Cable Curl, High Cable Curl"
-   
-    
+    var ArmsOrder : [Int] = [2, 3, 5, 0, 1, 2, 4]
+    var ChestOrder : [Int] = [4, 3, 1, 2, 4, 2, 0]
+    var BackOrder : [Int] = [0, 3, 2, 4, 1, 2, 0]
+    var AbdominalsOrder : [Int] = [1, 3, 0, 4, 1, 2, 5]
+    var LegsOrder : [Int] = [1, 3, 0, 4, 1, 2, 5]
     
     // Intensity did not make the cut
     // intensity will range from 3-1
     //var intensity : Intensity
-    init() {
-        focusedMuscle = " "
-        specificMuscle = " "
-        
-        
+    init(muscle: String) {
+        focusedMuscle = muscle
         
     }
     
-    func generateWorkout (focusedMuscle: String, day : Int) -> String {
+    func generateWorkout (day : Int) -> String {
         if focusedMuscle == "Shoulder" {
-            for (index, _) in ShoulderOrder.enumerated() {
+            for index in ShoulderOrder {
                     if index == day {
                         if index == 0 {
                             return workoutIntro + workoutSchedule1
@@ -98,8 +84,113 @@ class workoutGoal {
                     }
             }
         }
-        return "Error! contact developer!"
+      else if focusedMuscle == "Arms" {
+        for index in ShoulderOrder {
+                if index == day {
+                    if index == 0 {
+                        return workoutIntro + workoutSchedule2
+                    } else if index == 1 {
+                        return workoutIntro + workoutSchedule3
+                    } else if index == 2 {
+                        return workoutIntro + workoutSchedule5
+                    } else if index == 3 {
+                        return workoutIntro + workoutSchedule0
+                    } else if index == 4 {
+                        return workoutIntro + workoutSchedule1
+                    } else if index == 5 {
+                        return workoutIntro + workoutSchedule2
+                    } else if index == 6 {
+                        return workoutIntro + workoutSchedule4
+                    }
+                }
+        }
     }
+        else if focusedMuscle == "Chest" {
+            for index in ShoulderOrder {
+                    if index == day {
+                        if index == 0 {
+                            return workoutIntro + workoutSchedule4
+                        } else if index == 1 {
+                            return workoutIntro + workoutSchedule3
+                        } else if index == 2 {
+                            return workoutIntro + workoutSchedule1
+                        } else if index == 3 {
+                            return workoutIntro + workoutSchedule2
+                        } else if index == 4 {
+                            return workoutIntro + workoutSchedule4
+                        } else if index == 5 {
+                            return workoutIntro + workoutSchedule2
+                        } else if index == 6 {
+                            return workoutIntro + workoutSchedule0
+                        }
+                    }
+            }
+        }
+        else if focusedMuscle == "Back" {
+            for index in ShoulderOrder {
+                    if index == day {
+                        if index == 0 {
+                            return workoutIntro + workoutSchedule0
+                        } else if index == 1 {
+                            return workoutIntro + workoutSchedule3
+                        } else if index == 2 {
+                            return workoutIntro + workoutSchedule2
+                        } else if index == 3 {
+                            return workoutIntro + workoutSchedule4
+                        } else if index == 4 {
+                            return workoutIntro + workoutSchedule1
+                        } else if index == 5 {
+                            return workoutIntro + workoutSchedule2
+                        } else if index == 6 {
+                            return workoutIntro + workoutSchedule0
+                        }
+                    }
+            }
+        }
+        else if focusedMuscle == "Abdominals" {
+            for index in ShoulderOrder {
+                    if index == day {
+                        if index == 0 {
+                            return workoutIntro + workoutSchedule1
+                        } else if index == 1 {
+                            return workoutIntro + workoutSchedule3
+                        } else if index == 2 {
+                            return workoutIntro + workoutSchedule0
+                        } else if index == 3 {
+                            return workoutIntro + workoutSchedule4
+                        } else if index == 4 {
+                            return workoutIntro + workoutSchedule1
+                        } else if index == 5 {
+                            return workoutIntro + workoutSchedule2
+                        } else if index == 6 {
+                            return workoutIntro + workoutSchedule5
+                        }
+                    }
+            }
+        }
+        else if focusedMuscle == "Legs" {
+            for index in ShoulderOrder {
+                    if index == day {
+                        if index == 0 {
+                            return workoutIntro + workoutSchedule1
+                        } else if index == 1 {
+                            return workoutIntro + workoutSchedule3
+                        } else if index == 2 {
+                            return workoutIntro + workoutSchedule0
+                        } else if index == 3 {
+                            return workoutIntro + workoutSchedule3
+                        } else if index == 4 {
+                            return workoutIntro + workoutSchedule1
+                        } else if index == 5 {
+                            return workoutIntro + workoutSchedule2
+                        } else if index == 6 {
+                            return workoutIntro + workoutSchedule5
+                        }
+                    }
+            }
+        }
+        return "Error! contact developer!"
+}
         
 
 
