@@ -57,7 +57,8 @@ class ViewController: UIViewController {
     
     //Tracker
     let tracker = Tracker()
-    var muscle = workoutGoal(muscle: "")
+    let muscle = workoutGoal()
+    var equal = ""
     
     //segmented control actions
     @IBAction func Sunday(_ sender: Any) {
@@ -119,55 +120,55 @@ class ViewController: UIViewController {
     
     //outlets to show text
     @IBAction func showwrkSun(_ sender: Any) {
-        SundayWrk.text = muscle.generateWorkout(day: 0) //replace with sundayPrint
+        SundayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day: 0) //replace with sundayPrint
     }
     
     @IBAction func showwrkMon(_ sender: Any) {
-        MondayWrk.text = muscle.generateWorkout(day: 1) // replace with mondayPrint
+        MondayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day: 1) // replace with mondayPrint
     }
     
     @IBAction func showwrkTues(_ sender: Any) {
-        TuesdayWrk.text = muscle.generateWorkout(day: 2) // replace with tuesdayPrint
+        TuesdayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day: 2) // replace with tuesdayPrint
     }
     
     @IBAction func showwrkWed(_ sender: Any) {
-        WednesdayWrk.text = muscle.generateWorkout(day: 3) // replace with wednesdayPrint
+        WednesdayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day: 3) // replace with wednesdayPrint
     }
     
     @IBAction func showwrkThurs(_ sender: Any) {
-        ThursdayWrk.text = muscle.generateWorkout(day: 4) //replace with thursdayPrint
+        ThursdayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day: 4) //replace with thursdayPrint
     }
     
     @IBAction func showwrkFri(_ sender: Any) {
-        FridayWrk.text = muscle.generateWorkout(day:5) //replace with fridayPrint
+        FridayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day:5) //replace with fridayPrint
     }
     
     @IBAction func showworkSat(_ sender: Any) {
-        SaturdayWrk.text = muscle.generateWorkout(day: 6) //replace with saturdayPrint
+        SaturdayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day: 6) //replace with saturdayPrint
     }
     
     
     @IBAction func shoulder_button(_ sender: Any) {
-        muscle = workoutGoal(muscle: "Shoulder")
+        equal = muscle.chosenMuscle(musclefr : "Shoulder")
     }
     @IBAction func arms_button(_ sender: Any) {
-        muscle = workoutGoal(muscle: "Arms")
+        
     }
     
     @IBAction func chest_button(_ sender: Any) {
-        muscle = workoutGoal(muscle: "Chest")
+        
     }
     
     @IBAction func back_button(_ sender: Any) {
-        muscle = workoutGoal(muscle: "Back")
+        
     }
     
     @IBAction func abdominals_button(_ sender: Any) {
-        muscle = workoutGoal(muscle: "Abdominals")
+        
     }
     
     @IBAction func legs_button(_ sender: Any) {
-        muscle = workoutGoal(muscle: "Legs")
+        
     }
     
     
