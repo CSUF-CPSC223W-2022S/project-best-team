@@ -18,15 +18,8 @@ import Foundation
 // functions: generateWorkout
 
 class workoutGoal {
-    var focusedMuscle: String
-    var thisMuscle
-    // Focused Muscles
-    var Muscle1 : String = "Shoulder"
-    var Muscle2 : String = "Arms"
-    var Muscle3 : String = "Chest"
-    var Muscle4 : String = "Back"
-    var Muscle5 : String = "Abdominals"
-    var Muscle6 : String = "Legs"
+
+    var thisMuscle : Int
     
     // Types of focused muscles did not make the cut :(
     // var shoulder : [String] = ["Trapezius"]
@@ -37,14 +30,14 @@ class workoutGoal {
     // var legs : [String] = ["Calves", "Legs", "Hamstrings", "Quadriceps"]
     
     // Workout Schedule Strings
-    var workoutIntro : String = "Workouts you should do today:"
+    var workoutIntro : String = "Workouts you should do today: "
     // Workout Schedules
-    var workoutSchedule0 : String = "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull "
+    var workoutSchedule0 : String = "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull"
     var workoutSchedule1 : String = "3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl"
-    var workoutSchedule2 : String = "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine "
+    var workoutSchedule2 : String = "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine"
     var workoutSchedule3 : String = "3 x 10 Dumbell Wrist Extension, 6 x 5 Recerse Curl, 2 x 15 Hammer Curl, 4 x 10 Pull Up Bar"
-    var workoutSchedule4 : String = "2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press "
-    var workoutSchedule5 : String = "2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull "
+    var workoutSchedule4 : String = "2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press"
+    var workoutSchedule5 : String = "2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull"
     
     
     var ShoulderOrder : [Int] = [1, 3, 5, 4, 1, 2, 5]
@@ -54,26 +47,44 @@ class workoutGoal {
     var AbdominalsOrder : [Int] = [1, 3, 0, 4, 1, 2, 5]
     var LegsOrder : [Int] = [1, 3, 0, 4, 1, 2, 5]
     
-    var ShoulderSchedule : [String] = ["3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl","3 x 10 Dumbell Wrist Extension, 6 x 5 Recerse Curl, 2 x 15 Hammer Curl, 4 x 10 Pull Up Bar" ,"2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull " ,"2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press" ,"3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl" , "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine ","2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull " ]
+    var ShoulderSchedule : [String] = ["3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl","3 x 10 Dumbell Wrist Extension, 6 x 5 Recerse Curl, 2 x 15 Hammer Curl, 4 x 10 Pull Up Bar" ,"2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull " ,"2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press" ,"3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl" , "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down, 4 x 6 Press Machine ","2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull"]
+    var ArmsSchedule : [String] = ["4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine ","3 x 10 Dumbell Wrist Extension, 6 x 5 Recerse Curl, 2 x 15 Hammer Curl, 4 x 10 Pull Up Bar","2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull ", "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull ", "3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl","4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine ", "2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press"]
+    var ChestSchedule : [String] = ["2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press", "3 x 10 Dumbell Wrist Extension, 6 x 5 Recerse Curl, 2 x 15 Hammer Curl, 4 x 10 Pull Up Bar", "3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl", "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine", "2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press", "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine", "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull"]
+    var BackSchedule : [String] = ["3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull", "3 x 10 Dumbell Wrist Extension, 6 x 5 Recerse Curl, 2 x 15 Hammer Curl, 4 x 10 Pull Up Bar", "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine", "2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press", "3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl", "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine", "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull"]
+    var AbdominalsSchedule : [String] = ["3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl", "3 x 10 Dumbell Wrist Extension, 6 x 5 Recerse Curl, 2 x 15 Hammer Curl, 4 x 10 Pull Up Bar", "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull", "2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press", "3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl", "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine", "2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull"]
+    var LegsSchedule : [String] = ["3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl", "3 x 10 Dumbell Wrist Extension, 6 x 5 Recerse Curl, 2 x 15 Hammer Curl, 4 x 10 Pull Up Bar", "3 x 12 Barrel Shrug, 2 x 10 Dumbell One Arm Row, 1 x 15 Rack Pull, 4 x 10 Face Pull", "2 x 10 Incline Push Ups, 2 x 15 Flat Bench Press, 3 x 10 Incline Bench Press, 5 x 10 Decline Bench Press", "3 x 10 Chin-Ups, 2 x 10 Hammer Curls, 4 x 5 Incline Dumbell Curl, 3 x 10 Cable Curl, 5 x 5 High Cable Curl", "4 x 5 Bench Dips, 2 x 10 Push Ups, 1 x 15 Skull Crushers, 3 x 12 Trciep Rope Push Down,  4 x 6 Press Machine", "2 x 10 Barrel Shrug, 3 x 10 Dumbell One Arm Row, 2 x 10 Rack Pull, 3 x 15 Face Pull"]
     
     // Intensity did not make the cut
     // intensity will range from 3-1
     //var intensity : Intensity
-    init (muscle: Int) {
+    
+    init (focusedMuscle: Int) {
         thisMuscle = focusedMuscle
         
     }
     init () {
-        focusedMuscle = ""
+        thisMuscle = 0
     }
-    func chosenMuscle (musclefr : Int) -> Int {
-        return musclefr
-    }
+    //init () {
+        //focusedMuscle = ""
+        //thisMuscle = 0
+    //
     
+    func getMuscle() -> Int {
+        return thisMuscle
+}
+   
     func generateWorkout (chosenMuscle : Int, day : Int) -> String {
+        if chosenMuscle == 0 {
             for _ in ShoulderSchedule {
                 return workoutIntro + ShoulderSchedule[day]
             }
+        }
+        else if chosenMuscle == 1 {
+            for _ in ArmsSchedule {
+                return workoutIntro + ArmsSchedule[day]
+            }
+        }
         return "Error! contact developer!"
     }
         
