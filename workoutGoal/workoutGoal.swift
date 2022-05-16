@@ -19,7 +19,7 @@ import Foundation
 
 class workoutGoal {
     var focusedMuscle: String
-    
+    var thisMuscle
     // Focused Muscles
     var Muscle1 : String = "Shoulder"
     var Muscle2 : String = "Arms"
@@ -59,26 +59,21 @@ class workoutGoal {
     // Intensity did not make the cut
     // intensity will range from 3-1
     //var intensity : Intensity
-    init (muscle: String) {
-        focusedMuscle = muscle
+    init (muscle: Int) {
+        thisMuscle = focusedMuscle
         
     }
     init () {
         focusedMuscle = ""
     }
-    func chosenMuscle (musclefr : String) -> String {
+    func chosenMuscle (musclefr : Int) -> Int {
         return musclefr
     }
     
-    func generateWorkout (chosenMuscle : String, day : Int) -> String {
-        if chosenMuscle == "Shoulder" {
+    func generateWorkout (chosenMuscle : Int, day : Int) -> String {
             for _ in ShoulderSchedule {
-                print (workoutIntro)
                 return workoutIntro + ShoulderSchedule[day]
             }
-                
-        }
-        print ("poopsies")
         return "Error! contact developer!"
     }
         

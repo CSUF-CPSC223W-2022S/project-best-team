@@ -58,7 +58,6 @@ class ViewController: UIViewController {
     //Tracker
     let tracker = Tracker()
     let muscle = workoutGoal()
-    var equal = ""
     
     //segmented control actions
     @IBAction func Sunday(_ sender: Any) {
@@ -120,7 +119,9 @@ class ViewController: UIViewController {
     
     //outlets to show text
     @IBAction func showwrkSun(_ sender: Any) {
+        //if let muscleController = self.viewController
         SundayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day: 0) //replace with sundayPrint
+        print (equal)
     }
     
     @IBAction func showwrkMon(_ sender: Any) {
@@ -140,35 +141,36 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showwrkFri(_ sender: Any) {
-        FridayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day:5) //replace with fridayPrint
+        FridayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day: 5) //replace with fridayPrint
     }
     
     @IBAction func showworkSat(_ sender: Any) {
         SaturdayWrk.text = muscle.generateWorkout(chosenMuscle: equal, day: 6) //replace with saturdayPrint
     }
     
-    
+    var equal = 0
     @IBAction func shoulder_button(_ sender: Any) {
-        equal = muscle.chosenMuscle(musclefr : "Shoulder")
+        equal = muscle.chosenMuscle(musclefr : 1)
+        print (equal)
     }
     @IBAction func arms_button(_ sender: Any) {
-        
+        equal = muscle.chosenMuscle(musclefr : 2)
     }
     
     @IBAction func chest_button(_ sender: Any) {
-        
+        equal = muscle.chosenMuscle(musclefr : 3)
     }
     
     @IBAction func back_button(_ sender: Any) {
-        
+        equal = muscle.chosenMuscle(musclefr : 4)
     }
     
     @IBAction func abdominals_button(_ sender: Any) {
-        
+        equal = muscle.chosenMuscle(musclefr : 5)
     }
     
     @IBAction func legs_button(_ sender: Any) {
-        
+        equal = muscle.chosenMuscle(musclefr : 6)
     }
     
     
