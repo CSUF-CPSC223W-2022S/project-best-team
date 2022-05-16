@@ -85,6 +85,26 @@ class workoutGoal {
                 return workoutIntro + ArmsSchedule[day]
             }
         }
+        else if chosenMuscle == 2 {
+            for _ in ChestSchedule {
+                return workoutIntro + ChestSchedule[day]
+            }
+        }
+        else if chosenMuscle == 3 {
+            for _ in BackSchedule {
+                return workoutIntro + BackSchedule[day]
+            }
+        }
+        else if chosenMuscle == 4 {
+            for _ in AbdominalsSchedule {
+                return workoutIntro + AbdominalsSchedule[day]
+            }
+        }
+        else if chosenMuscle == 5 {
+            for _ in LegsSchedule {
+                return workoutIntro + LegsSchedule[day]
+            }
+        }
         return "Error! contact developer!"
     }
         
